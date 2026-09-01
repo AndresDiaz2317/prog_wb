@@ -1,22 +1,70 @@
 <!doctype html>
 <html lang="es">
 	<head>
-		<link rel="stylesheet" href="estilos.css" />
+		<link href="estilos.css" rel="stylesheet" type="text/css" />
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>El Oceano</title>
 	</head>
 	<body>
+		<form action="xxxx.php" method="post">
+			
 		<header>
-			<h1>Bienvenido</h1>
+			<h1 >
+				Formulario de steam
+			</h1>
 		</header>
+			
+			<label for="usuario">Nombre de Usuario:</label><input type="text" name="nombre" required><br>
+			<br>
+			<label for="contraseña">Contraseña:</label><input type="password" name="contraseña" required><br> 
+			<br>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Borrar">
+			<br>
+			<br>
+			1.¿Que generos de juegos te gustan?<br>
+			<br>
+			<input type="checkbox" name="accion" value="accion">Accion<br>
+			<input type="checkbox" name="Terror" value="Terror">Terror<br>
+			<input type="checkbox" name="aventura" value="aventura">Aventura<br>
+			<input type="checkbox" name="Role" value="Role">Rolplay<br>	
+			<input type="checkbox" name="estrategia" value="estrategia">Estrategia<br>
+			<br>
+			<br>
+			2.¿Que cantidad de juegos has jugado?<br>
+			<br>
+			<label for="cantidad">Cantidad de juegos:</label>
+			<select name="cantidad" id="cantidad">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select>
+			<br>
+			<br>
+			3.¿Cual ha sido tu experiencia en los juegos?<br>
+			<br>
+			<input type="radio" name="experiencia" value="buena">Buena<br>
+			<input type="radio" name="experiencia" value="regular">Regular<br>
+			<input type="radio" name="experiencia" value="mala">Mala
+			<br>
+			<br>
+			4.¿Cuentas con una buena pc?<br>
+			<br>
+			<input type="radio" name="pc" value="si">Sí<br>
+			<input type="radio" name="pc" value="no">No
+			<br>
+			<br>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Borrar">
 
-		<main>
-			<p>Este es el cuerpo normal de una página.</p>
-		</main>
+		</form>
 
 		<footer>
 			<small> 2026</small>
 		</footer>
+
 	</body>
 </html>
