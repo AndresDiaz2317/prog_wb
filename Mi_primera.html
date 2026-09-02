@@ -1,70 +1,112 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-	<head>
-		<link href="estilos.css" rel="stylesheet" type="text/css" />
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	</head>
-	<body>
-		<form action="xxxx.php" method="post">
-			
-		<header>
-			<h1 >
-				Formulario de steam
-			</h1>
-		</header>
-			
-			<label for="usuario">Nombre de Usuario:</label><input type="text" name="nombre" required><br>
-			<br>
-			<label for="contraseña">Contraseña:</label><input type="password" name="contraseña" required><br> 
-			<br>
-			<input type="submit" value="Enviar">
-			<input type="reset" value="Borrar">
-			<br>
-			<br>
-			1.¿Que generos de juegos te gustan?<br>
-			<br>
-			<input type="checkbox" name="accion" value="accion">Accion<br>
-			<input type="checkbox" name="Terror" value="Terror">Terror<br>
-			<input type="checkbox" name="aventura" value="aventura">Aventura<br>
-			<input type="checkbox" name="Role" value="Role">Rolplay<br>	
-			<input type="checkbox" name="estrategia" value="estrategia">Estrategia<br>
-			<br>
-			<br>
-			2.¿Que cantidad de juegos has jugado?<br>
-			<br>
-			<label for="cantidad">Cantidad de juegos:</label>
-			<select name="cantidad" id="cantidad">
-				<option value="0">0</option>
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-			</select>
-			<br>
-			<br>
-			3.¿Cual ha sido tu experiencia en los juegos?<br>
-			<br>
-			<input type="radio" name="experiencia" value="buena">Buena<br>
-			<input type="radio" name="experiencia" value="regular">Regular<br>
-			<input type="radio" name="experiencia" value="mala">Mala
-			<br>
-			<br>
-			4.¿Cuentas con una buena pc?<br>
-			<br>
-			<input type="radio" name="pc" value="si">Sí<br>
-			<input type="radio" name="pc" value="no">No
-			<br>
-			<br>
-			<input type="submit" value="Enviar">
-			<input type="reset" value="Borrar">
 
-		</form>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Steam</title>
 
-		<footer>
-			<small> 2026</small>
-		</footer>
+    <link rel="stylesheet" href="estilos.css">
+</head>
 
-	</body>
+<body>
+
+    <main class="contenedor">
+
+        <form action="xxxx.php" method="post">
+
+            <header>
+                <h1>🎮 Formulario Steam</h1>
+                <p>Comparte tus gustos y experiencia en los videojuegos.</p>
+            </header>
+
+            <fieldset>
+                <legend>👤 Datos de acceso</legend>
+
+                <div class="campo">
+                    <label for="nombre">Nombre de usuario</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu usuario" required>
+                </div>
+
+                <div class="campo">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Ingresa tu contraseña" required>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>🎮 Géneros favoritos</legend>
+
+                <label><input type="checkbox" name="accion"> Acción</label>
+                <label><input type="checkbox" name="terror"> Terror</label>
+                <label><input type="checkbox" name="aventura"> Aventura</label>
+                <label><input type="checkbox" name="rol"> Rol</label>
+                <label><input type="checkbox" name="estrategia"> Estrategia</label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>🎲 Juegos jugados</legend>
+
+                <div class="campo">
+
+                    <label for="cantidad">Cantidad de juegos</label>
+
+                    <select id="cantidad" name="cantidad">
+
+                        <option value="">Seleccione una opción</option>
+                        <option>0 - 10</option>
+                        <option>11 - 20</option>
+                        <option>21 - 50</option>
+                        <option>Más de 50</option>
+
+                    </select>
+
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>⭐ Experiencia jugando</legend>
+
+                <label><input type="radio" name="experiencia" value="buena"> Buena</label>
+
+                <label><input type="radio" name="experiencia" value="regular"> Regular</label>
+
+                <label><input type="radio" name="experiencia" value="mala"> Mala</label>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>💻 Equipo</legend>
+
+                <label><input type="radio" name="pc" value="si"> Sí, tengo una buena PC</label>
+
+                <label><input type="radio" name="pc" value="no"> No</label>
+
+            </fieldset>
+
+            <div class="botones">
+
+                <input type="submit" value="Enviar">
+
+                <input type="reset" value="Limpiar">
+
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer>
+
+        <small>© 2026 - Proyecto Steam</small>
+
+    </footer>
+
+</body>
+
 </html>
