@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pizz.css">
+  <title>Encuesta y Pedido de Pizzas</title>
+</head>
+<body>
+  <form action="#" method="post">
+    <h2>Encuesta de Cliente</h2>
+    <div class="grupo">
+      <div class="campo">
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres">
+      </div>
+      <div class="campo">
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos">
+      </div>
+    </div>
+
+    <div class="grupo">
+      <div class="campo">
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion">
+      </div>
+      <div class="campo">
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo">
+          <option value="">Seleccione</option>
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="grupo">
+      <div class="campo">
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="1">
+      </div>
+      <div class="campo">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono">
+      </div>
+    </div>
+
+    <div class="grupo">
+      <div class="campo">
+        <label for="celular">Celular:</label>
+        <input type="tel" id="celular" name="celular">
+      </div>
+      <div class="campo">
+        <label for="profesion">Profesión u Oficio:</label>
+        <input type="text" id="profesion" name="profesion">
+      </div>
+    </div>
+
+    <h2>Pedido de Pizzas</h2>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre">
+
+    <label for="direccionPedido">Dirección:</label>
+    <input type="text" id="direccionPedido" name="direccionPedido">
+
+    <label for="telefonoPedido">Teléfono:</label>
+    <input type="tel" id="telefonoPedido" name="telefonoPedido">
+
+    <label>Tipo de Pizza:</label>
+
+    <div class="pizza">
+      <label><input type="checkbox" name="tipoPizza" value="Jamon y queso"> Jamón y queso</label>
+      <input type="number" class="cantidad" name="cantidadJamon" min="0" placeholder="Cantidad">
+    </div>
+
+    <div class="pizza">
+      <label><input type="checkbox" name="tipoPizza" value="Napolitana"> Napolitana</label>
+      <input type="number" class="cantidad" name="cantidadNapolitana" min="0" placeholder="Cantidad">
+    </div>
+
+    <div class="pizza">
+      <label><input type="checkbox" name="tipoPizza" value="Muzzarella"> Muzzarella</label>
+      <input type="number" class="cantidad" name="cantidadMuzzarella" min="0" placeholder="Cantidad">
+    </div>
+
+    <label for="detalles">Detalles del pedido:</label>
+    <textarea id="detalles" name="detalles" placeholder="Escriba aquí detalles adicionales del pedido..."></textarea>
+
+    <button type="submit">pedido</button>
+  </form>
+</body>
+</html>
