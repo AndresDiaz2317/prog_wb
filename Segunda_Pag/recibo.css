@@ -6,7 +6,7 @@ body{
     background-color: #f3eee6;
     color: #2C2523;
 }
-
+ 
 /* Título */
 .titulos{
     text-align: center;
@@ -75,4 +75,23 @@ hr{
 
 .boton a:hover{
     background-color: #a93226;
+}
+
+.boton-nv{
+    display: inline-block;
+    background-color: #2E7D32;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 15px;
+    border-color: red;
+    border: 3px solid red
+}
+
+.boton-nv:hover{
+    transition: transform 1s, background-color 1s;
+    background-color: greenyellow;
+    transform: scale(1.1)
 }
