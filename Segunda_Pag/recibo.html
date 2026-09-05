@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">    
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "recibo.css">
+        <title>Recibo</title>
+    </head> 
+
+    <body>
+        <h1 class = "titulos">Recibo</h1>
+        <div class = "recibo-div">
+            <div class = "recibo">
+                <p id="nombre">Nombre: </p>
+                <p id="direccion">Direccion: </p>
+                <p id="telefono">Telefono: </p>
+                <p id="pedido">Pedido: </p>
+            </div>
+        </div>
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const nombre = urlParams.get('usuario');
+            const direccion = urlParams.get('direccion');
+            const telefono = urlParams.get('telefono');
+            const pedido = [];
+
+            document.getElementById('nombre').textContent += nombre;
+            document.getElementById('direccion').textContent += direccion;
+            document.getElementById('telefono').textContent += telefono;
+
+
+            if (urlParams.get('tipo-pizza-nap') === 'napolitana') {
+                pedido.push(`Napolitana: ${urlParams.get('cantidad-pizza-nap')}`);
+            }
+            if (urlParams.get('tipo-pizza-jq') === 'jamon-queso') {
+                pedido.push(`Jamon y queso: ${urlParams.get('cantidad-pizza-jq')}`);
+            }
+            if (urlParams.get('tipo-pizza-muz') === 'muzzarela') {
+                pedido.push(`Muzzarela: ${urlParams.get('cantidad-pizza-muz')}`);
+            }
+
+            document.getElementById('pedido').textContent += pedido.join(', ');
+        </script>
+
+    </body>
+</html>

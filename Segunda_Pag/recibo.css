@@ -1,0 +1,78 @@
+/* Página */
+body{
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #f3eee6;
+    color: #2C2523;
+}
+
+/* Título */
+.titulos{
+    text-align: center;
+    color: #C0392B;
+    margin-bottom: 30px;
+}
+
+/* Contenedor */
+.recibo-div{
+    display: flex;
+    justify-content: center;
+}
+
+/* Tarjeta del recibo */
+.recibo{
+    width: 500px;
+    background-color: #FBF8F1;
+    border: 2px solid #C0392B;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0,0,0,.15);
+    padding: 30px;
+}
+
+/* Información */
+.recibo p{
+    margin: 15px 0;
+    padding: 12px;
+    background-color: white;
+    border-left: 5px solid #2E7D32;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Separador */
+hr{
+    border: none;
+    border-top: 1px solid #d8d0c8;
+    margin: 25px 0;
+}
+
+/* Total */
+.total{
+    text-align: right;
+    font-size: 22px;
+    font-weight: bold;
+    color: #C0392B;
+    margin-top: 20px;
+}
+
+/* Botón */
+.boton{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.boton a{
+    text-decoration: none;
+    background-color: #C0392B;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.boton a:hover{
+    background-color: #a93226;
+}
