@@ -1,82 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <link rel="stylesheet" href="registro.css">
+    <title>Registro Principal</title>
 </head>
 <body>
-    <h1>REGISTRO PRINCIPAL</h1>
+    <div class="registro-container">
+        
+        <div class="titulo-caja">
+            <h1>REGISTRO PRINCIPAL</h1>
+        </div>
 
-    <div>
         <form>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" placeholder="Nombre" required>
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" placeholder="Apellido" required>
-            <label for ="Tip_documento">Tipo de Documento</label>
-                <select id="Tip_documento" name="tipo_documento">  
-                    <option value="cc">C.C.</option>
-                    <option value="ce">C.E.</option>    
-                    <option value="pas">Pasaporte</option>
-                </select>
-            <label for="fecha_Nac">Fecha de Nacimiento</label>
-            <input type="datetime" name="fecha_Nac" placeholder="Fecha de Nacimiento">
-            <label for="genero">Genero o Sexo</label>
-                <select name="eligasugenero" id="genero">Genero o Sexo
-                    <option value=""> ---- </option>
-                    <option value="m">Hombre</option>
-                    <option value="f">Mujer</option>
-                    <option value="o">Otro</option>
-                </select>
-            <label for="Email">Correo Electronico</label>
-            <input type="email" name="Email" placeholder="Correo" required>
+            <div class="form-grid">
+                
+                <!-- Fila 1 -->
+                <div class="form-group span-6">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="form-group span-6">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                </div>
 
-            <label for="Email">Correo Electronico</label>
-            <input type="email" name="Email" placeholder="Correo" required>
+                <!-- Fila 2 -->
+                <div class="form-group span-3">
+                    <label for="Tip_documento">Tipo de Documento</label>
+                    <select id="Tip_documento" name="tipo_documento">  
+                        <option value="cc">C.C.</option>
+                        <option value="ce">C.E.</option>    
+                        <option value="pas">Pasaporte</option>
+                    </select>
+                </div>
+                <div class="form-group span-5">
+                    <label for="num_documento">Número de Documento</label>
+                    <input type="text" id="num_documento" name="num_documento" placeholder="Número de Documento" required>
+                </div>
+                <div class="form-group span-4">
+                    <label for="fecha_Nac">Fecha de Nacimiento</label>
+                    <input type="datetime-local" id="fecha_Nac" name="fecha_Nac" placeholder="Fecha de Nacimiento">
+                </div>
+
+                <!-- Fila 3 -->
+                <div class="form-group span-3">
+                    <label for="genero">Género o Sexo</label>
+                    <select name="eligasugenero" id="genero">
+                        <option value=""> ---- </option>
+                        <option value="m">Hombre</option>
+                        <option value="f">Mujer</option>
+                        <option value="o">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group span-9">
+                    <label for="otro_genero">---</label>
+                    <input type="text" id="otro_genero" name="otro_genero" placeholder="Otro*">
+                </div>
+
+                <!-- Fila 4 -->
+                <div class="form-group span-6">
+                    <label for="Email">Correo Electrónico</label>
+                    <input type="email" id="Email" name="Email" placeholder="Correo" required>
+                </div>
+                <div class="form-group span-6">
+                    <label for="Email_recuperacion">Correo de Recuperación</label>
+                    <input type="email" id="Email_recuperacion" name="Email_recuperacion" placeholder="Correo" required>
+                </div>
+
+                <!-- Fila 5 -->
+                <div class="form-group span-4">
+                    <label for="numero-celular">Número de celular</label>
+                    <input type="number" id="numero-celular" name="numero-celular" placeholder="Ingrese su número de teléfono" required>
+                </div>
+                <div class="form-group span-4">
+                    <label for="numero-respaldo">Número de respaldo</label>
+                    <input type="number" id="numero-respaldo" name="numero-respaldo" placeholder="Ingrese el número de respaldo" required>
+                </div>
+                <div class="form-group span-4">
+                    <!-- Espacio vacío para mantener el diseño a 12 columnas -->
+                </div>
+
+                <!-- Fila 6 -->
+                <div class="form-group span-4">
+                    <label for="pais">Selecciona tu país</label>
+                    <select id="pais" name="pais">
+                        <option value="">-- Elige un país --</option>
+                        <option value="AR">Argentina</option>
+                        <option value="CL">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="ES">España</option>
+                        <option value="MX">México</option>
+                        <option value="PE">Perú</option>
+                    </select>
+                </div>
+                <div class="form-group span-4">
+                    <label for="departamento">Seleccione su departamento</label>
+                    <select id="departamento" name="departamento"></select>
+                </div>
+                <div class="form-group span-4">
+                    <label for="ciudad">Seleccione su ciudad</label>
+                    <select id="ciudad" name="ciudad"></select>
+                </div>
+
+            </div> <!-- Cierre correcto de form-grid -->
+
+            <!-- Sección Inferior -->
+            <div class="seccion-inferior">
+                <div class="caja-contrasenas">
+                    <div class="form-group">
+                        <label for="contrasena">Contraseña</label>
+                        <input type="password" id="contrasena" name="contrasena" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmar_contrasena">Confirmación de contraseña</label>
+                        <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required>
+                    </div>
+                </div>
+
+                <div class="caja-terminos">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">Aceptación de términos y condiciones</label>
+                    </div>
+                    <a href="tu_archivo.pdf" class="link-terminos">pdf. Términos y condiciones</a>
+                </div>
+            </div>
+
+            <!-- Botones -->
+            <div class="caja-botones">
+                <button type="submit" class="btn-enviar">Enviar</button>
+                <button type="reset" class="btn-borrar">Borrar</button>
+            </div>
             
-            <label>
-                <input type = "number" name = "numero-celular" placeholder="Ingrese su numero de telefono" required>
-            </label>
-            <label>
-                <input type = "number" name = "numero-respaldo" placeholder="Ingrese el numero de respaldo" required>
-            </label>
-
-            <label for="pais">Selecciona tu país:</label>
-                <select id="pais" name="pais">
-                <option value="">-- Elige un país --</option>
-                <option value="AR">Argentina</option>
-                <option value="CL">Chile</option>
-                <option value="CO">Colombia</option>
-                <option value="ES">España</option>
-                <option value="MX">México</option>
-                <option value="PE">Perú</option>
-                </select>
-
-            <label for = "ciudad">Seleccione su ciudad</label>
-                <select id = "ciudad" name = "ciudad">
-                </select>
-
-            <label for = "departamento">Seleccione su departamento</label>
-                <select id = "departamento" name = "departamento">
-                </select>
-            
-            <label for="contrasena">Contraseña</label>
-            <input type="password" name="contrasena" placeholder="Contraseña" required>
-            <label for="">
-              Strength of password
-            </label>
-            <div class="power-container">
-            <div id="power-point"></div>
-            </div>  
-            <label for="confirmar_contrasena">Confirmar Contraseña</label>
-            <input type="password" name="confirmar_contrasena" placeholder="Confirmar Contraseña" required>
-            <button type="submit">Registrarse</button>
-
-            <input type="checkbox" name="terminos" required>
-            <label for="terminos">Acepto los términos y condiciones</label>
-
-            Puedes <a href="tu_archivo.pdf">descargar el archivo aquí</a>.
         </form>
     </div>
     <script src="script.js"></script>

@@ -1,53 +1,125 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pago</title>
-    </head>
-    <body>
-        
-        <labeel  for="Filtros" >Filtros</labeel>
-        <select name="Filtros" id="Filtros">
-            <option value="servicios">Servicios</option>
-        </select>    
-        
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="pagar.css">
+
+    <title>Pago</title>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="pagar-div1">
+
+            <label for="Filtros">Filtros</label>
+
+            <select name="Filtros" id="Filtros">
+                <option value="servicios">Servicios</option>
+            </select>
+
+        </div>
+
+
         <h2>Seleccione el servicio que desea pagar</h2>
-        
-        <span>Vanti</span>
-        <button type="submit"><a href="pagar.html">Pagar</a></button>
-        
-        <span>Emcali</span>
-        <button type="submit"><a href="pagar.html">Pagar</a></button>
 
-        <span>Enel</span>
-        <button type="submit"><a href="pagar.html">Pagar</a></button>
 
-        <span>Air-e</span>
-        <button type="submit"><a href="pagar.html">Pagar</a></button>
+        <div class="pagar-div2">
 
-        <sampan>EPM</span>
-        <button type="submit"><a href="pagar.html">Pagar</a></button>
+            <div class="servicio">
+                <img src="imagenes/vanti.webp" alt="Vanti">
+                <span>Vanti</span>
+                <a href="pagar.html">Pagar</a>
+            </div>
 
-        <span>Claro</span>
-        <button type="submit"><a href="pagar.html">Pagar</a></button>
+            <div class="servicio">
+                <img src="imagenes/emcali.webp" alt="Emcali">
+                <span>Emcali</span>
+                <a href="pagar.html">Pagar</a>
+            </div>
 
-        <span>Movistar</span>
-        <button type="submit"><a href="pagar.html">Pagar</a></button>
+            <div class="servicio">
+                <img src="imagenes/enel.jpg" alt="Enel">
+                <span>Enel</span>
+                <a href="pagar.html">Pagar</a>
+            </div>
 
-        <span>ETB</span>
-        <button type="submit"><a href="pagar.html">Pagar</a></button>
+            <div class="servicio">
+                <img src="imagenes/Air-e.png" alt="Air-e">
+                <span>Air-e</span>
+                <a href="pagar.html">Pagar</a>
+            </div>
 
-        <h2>Portal de Pagos</h2>
-        <span>Seleccione la forma de pago</span>
-        <select name="forma_pago" id="forma_pago">
-            <option value="">Seleccione una opción</option>
-            <option value="pse">PSE</option>
-            <option value="tarjeta">Tarjeta de Credito</option>
-            <option value="debito">Tarjeta de Debito</option>
-            <option value="paypal">Paypal</option>
-        </select>
-            <a href="pagar.html"><button type="submit">Pagar</button></a>
-    </body>
+            <div class="servicio">
+                <img src="imagenes/epm.png" alt="EPM">
+                <span>EPM</span>
+                <a href="pagar.html">Pagar</a>
+            </div>
+
+            <div class="servicio">
+                <img src="imagenes/claro.webp" alt="Claro">
+                <span>Claro</span>
+                <a href="pagar.html">Pagar</a>
+            </div>
+
+            <div class="servicio">
+                <img src="imagenes/movistar.png" alt="Movistar">
+                <span>Movistar</span>
+                <a href="pagar.html">Pagar</a>
+            </div>
+
+            <div class="servicio">
+                <img src="imagenes/etb.jpg" alt="ETB">
+                <span>ETB</span>
+                <a href="pagar.html">Pagar</a>
+            </div>
+
+        </div>
+
+
+        <div class="pagar-div3">
+
+            <h2>Portal de Pagos</h2>
+
+            <span>Seleccione la forma de pago</span>
+
+            <select name="forma_pago" id="forma_pago">
+
+                <option value="">
+                    Seleccione una opción
+                </option>
+
+                <option value="pse">
+                    PSE
+                </option>
+
+                <option value="tarjeta">
+                    Tarjeta de Crédito
+                </option>
+
+                <option value="debito">
+                    Tarjeta de Débito
+                </option>
+
+                <option value="paypal">
+                    Paypal
+                </option>
+
+            </select>
+
+
+            <a class="boton-final" href="pagar.html">
+                Pagar
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
 
 </html>

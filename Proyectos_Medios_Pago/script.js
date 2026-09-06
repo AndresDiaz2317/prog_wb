@@ -43,8 +43,8 @@ select_pais.addEventListener("change", function(){
     if (select_paises[select_v]) {
         const info = select_paises[select_v];
 
-        info.departamento.forEach(function(dep) {
-            select_departamento.innerHTML += `<option value="${dep}">${dep}</option>`;
+        info.departamento.forEach(function(departamento) {
+            select_departamento.innerHTML += `<option value="${departamento}">${departamento}</option>`;
         });
 
         info.ciudad.forEach(function(ciudad) {

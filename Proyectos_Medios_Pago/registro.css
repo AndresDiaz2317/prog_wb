@@ -1,0 +1,174 @@
+/* Restablecemos márgenes (si no lo tienes ya) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1e23; /* Fondo oscuro exterior, o puedes dejar el del login */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #ffffff;
+}
+
+/* Contenedor principal del registro */
+.registro-container {
+    background-color: #113f44; /* Verde/azulado oscuro */
+    width: 100%;
+    max-width: 750px;
+    padding: 40px;
+    border-radius: 40px;
+    border: 1px solid #2c5a5f;
+}
+
+/* Caja del título */
+.titulo-caja {
+    background-color: #3b4653;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #5a6c7d;
+    margin-bottom: 30px;
+}
+
+.titulo-caja h1 {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+/* Sistema de cuadrícula (Grid) para acomodar los campos */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 columnas invisibles */
+    gap: 15px; /* Espacio entre los campos */
+    margin-bottom: 20px;
+}
+
+/* Clases para definir cuánto ancho ocupa cada campo */
+.span-3 { grid-column: span 3; }
+.span-4 { grid-column: span 4; }
+.span-5 { grid-column: span 5; }
+.span-6 { grid-column: span 6; }
+.span-9 { grid-column: span 9; }
+.span-12 { grid-column: span 12; }
+
+/* Estilos de los grupos (label + input) */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+/* Estilos generales de las cajas de texto y selects */
+.form-grid input[type="text"],
+.form-grid input[type="email"],
+.form-grid input[type="number"],
+.form-grid input[type="date"],
+.form-grid select,
+.form-grid input[type="button"] {
+    background-color: #000000;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 8px;
+    color: #ffffff;
+    outline: none;
+    width: 100%;
+    height: 32px; /* Altura uniforme */
+}
+
+/* El botón de Appi google maps */
+.form-grid input[type="button"] {
+    cursor: pointer;
+    background-color: #121212;
+    text-align: left;
+}
+
+/* Sección inferior (Contraseñas y Términos) */
+.seccion-inferior {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.caja-contrasenas {
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    padding: 15px 20px;
+}
+
+.caja-contrasenas input[type="password"] {
+    background-color: #4a2e12; /* Color café oscuro */
+    border: 1px solid #9e6f39;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.caja-terminos {
+    border: 1px solid #cccccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #3b4653;
+}
+
+.checkbox-group label {
+    font-size: 0.85rem;
+}
+
+.link-terminos {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+/* Botones finales */
+.caja-botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.caja-botones button {
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-enviar {
+    background-color: #1a3c4a;
+    border: 1px solid #4a90e2;
+}
+
+.btn-borrar {
+    background-color: #4a2525;
+    border: 1px solid #e24a4a;
+}
