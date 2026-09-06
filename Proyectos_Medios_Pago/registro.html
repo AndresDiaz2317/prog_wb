@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <h1>REGISTRO PRINCIPAL</h1>
+
+    <div>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" placeholder="Apellido" required>
+            <label for ="Tip_documento">Tipo de Documento</label>
+                <select id="Tip_documento" name="tipo_documento">  
+                    <option value="cc">C.C.</option>
+                    <option value="ce">C.E.</option>    
+                    <option value="pas">Pasaporte</option>
+                </select>
+            <label for="fecha_Nac">Fecha de Nacimiento</label>
+            <input type="datetime" name="fecha_Nac" placeholder="Fecha de Nacimiento">
+            <label for="genero">Genero o Sexo</label>
+                <select name="eligasugenero" id="genero">Genero o Sexo
+                    <option value=""> ---- </option>
+                    <option value="m">Hombre</option>
+                    <option value="f">Mujer</option>
+                    <option value="o">Otro</option>
+                </select>
+            <label for="Email">Correo Electronico</label>
+            <input type="email" name="Email" placeholder="Correo" required>
+
+            <label for="Email">Correo Electronico</label>
+            <input type="email" name="Email" placeholder="Correo" required>
+            
+            <label>
+                <input type = "number" name = "numero-celular" placeholder="Ingrese su numero de telefono" required>
+            </label>
+            <label>
+                <input type = "number" name = "numero-respaldo" placeholder="Ingrese el numero de respaldo" required>
+            </label>
+
+            <label for="pais">Selecciona tu país:</label>
+                <select id="pais" name="pais">
+                <option value="">-- Elige un país --</option>
+                <option value="AR">Argentina</option>
+                <option value="CL">Chile</option>
+                <option value="CO">Colombia</option>
+                <option value="ES">España</option>
+                <option value="MX">México</option>
+                <option value="PE">Perú</option>
+                </select>
+
+            <label for = "ciudad">Seleccione su ciudad</label>
+                <select id = "ciudad" name = "ciudad">
+                </select>
+
+            <label for = "departamento">Seleccione su departamento</label>
+                <select id = "departamento" name = "departamento">
+                </select>
+            
+            <label for="contrasena">Contraseña</label>
+            <input type="password" name="contrasena" placeholder="Contraseña" required>
+            <label for="">
+              Strength of password
+            </label>
+            <div class="power-container">
+            <div id="power-point"></div>
+            </div>  
+            <label for="confirmar_contrasena">Confirmar Contraseña</label>
+            <input type="password" name="confirmar_contrasena" placeholder="Confirmar Contraseña" required>
+            <button type="submit">Registrarse</button>
+
+            <input type="checkbox" name="terminos" required>
+            <label for="terminos">Acepto los términos y condiciones</label>
+
+            Puedes <a href="tu_archivo.pdf">descargar el archivo aquí</a>.
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

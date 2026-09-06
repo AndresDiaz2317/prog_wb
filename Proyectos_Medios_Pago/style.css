@@ -1,0 +1,114 @@
+/* Restablecemos márgenes y usamos una fuente limpia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Centrado del formulario y color de fondo exterior */
+body {
+    background-color: #113f44; /* Color verde/azulado oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+/* Estilos de la tarjeta principal */
+.principio {
+    background-color: #3b4653; /* Color gris/azulado del formulario */
+    width: 450px;
+    padding: 40px 50px;
+    border-radius: 40px;
+    border: 1px solid #5a6c7d;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Textos y títulos */
+.principio h1 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.principio h2 {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    margin-left: 5%;
+}
+
+.principio span, 
+.principio label {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    margin-left: 5%;
+    display: block;
+}
+
+/* En el HTML original hay un <span> y un <label> redundantes para la contraseña. 
+   Ocultamos el label para que quede igual a la imagen. */
+.principio label[for="contrasena"] {
+    display: none;
+}
+
+/* Estilos de las cajas de texto (inputs) */
+.principio input {
+    width: 90%;
+    margin: 0 auto 20px auto;
+    background-color: #121212; /* Fondo casi negro */
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 12px;
+    color: #ffffff;
+    outline: none;
+}
+
+/* Evitamos que el placeholder rompa el diseño si decides usarlo, 
+   o puedes borrar los placeholders del HTML para ser 100% fiel a la imagen */
+.principio input::placeholder {
+    color: #555;
+}
+
+/* Base para los botones */
+.principio button {
+    background-color: #5c3817; /* Tono café/dorado oscuro */
+    border: 1px solid #9e6f39;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.principio button:hover {
+    background-color: #7a4b1f;
+}
+
+/* Botón principal (Iniciar Sesion) */
+.principio button:nth-of-type(1) {
+    width: 150px;
+    margin: 10px auto 40px auto;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* Botón secundario (Registrarse) */
+.principio button:nth-of-type(2) {
+    width: 110px;
+    margin: 10px auto 0 auto;
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+/* Estilo para el enlace dentro del botón de registro */
+.principio button a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
