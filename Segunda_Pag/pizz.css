@@ -236,3 +236,66 @@ textarea {
 .botones input[type="reset"]:hover {
   background-color: #687475;
 }
+
+/* Imagen de tamaños de pizza */
+.img-pizza {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd5cd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Rediseño de cada fila de pizza para alojar 3 elementos */
+.opcion-pizza {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px; /* Espacio entre los elementos */
+  padding: 8px 10px;
+  margin-top: 8px;
+  background-color: white;
+  border: 1px solid #ddd5cd;
+  border-radius: 7px;
+}
+
+/* Ajuste del nombre + checkbox */
+.opcion-pizza label {
+  width: auto;
+  flex: 1; /* Ocupa el espacio disponible a la izquierda */
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Selector desplegable de tamaño */
+.select-tamano {
+  padding: 6px;
+  border: 1px solid #b9b1aa;
+  border-radius: 5px;
+  font-size: 13px;
+  background-color: #fff;
+  color: #2C2523;
+  cursor: pointer;
+}
+
+.select-tamano:focus {
+  outline: none;
+  border-color: #2E7D32;
+}
+
+/* Campo de cantidad */
+.opcion-pizza input.input-cant {
+  width: 50px;
+  padding: 6px;
+  border: 1px solid #b9b1aa;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 13px;
+}
+
