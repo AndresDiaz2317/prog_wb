@@ -1,0 +1,118 @@
+{
+  "title": "Elige la nueva identidad del portal",
+  "question": "Estas direcciones mantienen el mismo flujo de acceso, registro, servicios y pago simulado. Elige una o pide una nueva selección.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Lectura de medidor",
+      "kicker": "LA PROPUESTA",
+      "lineage": "medidores domésticos y cuadros de consumo",
+      "thesis": "Cada pago avanza como una lectura clara: servicio, método, datos y comprobante.",
+      "palette": ["#F4F1E8", "#132A3A", "#176B87", "#F06C3B"],
+      "materials": ["esmalte mate", "carátulas numeradas", "reglas de precisión"],
+      "viewport": "El acceso comparte pantalla con un gran indicador de recorrido y un resumen de los servicios que podrá gestionar el usuario.",
+      "risk": "Exige contener la metáfora para no convertir una tarea simple en un tablero técnico.",
+      "raised": [
+        {"from": "Ticket de viaje", "raise": "El avance conserva siempre el rastro de los pasos ya completados."},
+        {"from": "Terminal", "raise": "Todo el recorrido funciona con teclado y el estado se expresa también con texto."},
+        {"from": "Etiquetado industrial", "raise": "Cada acción y estado usa palabras directas, sin iconos ambiguos."}
+      ],
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "marca y contexto", "x": 0, "y": 0, "w": 7, "h": 10, "accent": true},
+        {"label": "acceso", "x": 7, "y": 0, "w": 5, "h": 10}
+      ]},
+      "comp": ".impeccable/mocks/decision/assigned.webp"
+    },
+    {
+      "id": "model-pick",
+      "label": "Talón de factura",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "facturas de servicios y comprobantes desprendibles",
+      "thesis": "El portal se comporta como una factura extraordinariamente bien organizada que se transforma en comprobante.",
+      "palette": ["#FFFDF7", "#17212B", "#226B5E", "#E2A737"],
+      "materials": ["papel blanco", "tinta administrativa", "perforaciones"],
+      "viewport": "Una hoja estructurada muestra el acceso y un comprobante ilustrativo con jerarquía contable.",
+      "risk": "Es la solución más familiar y puede sentirse demasiado administrativa si pierde escala y ritmo.",
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "cabecera", "x": 0, "y": 0, "w": 12, "h": 2, "accent": true},
+        {"label": "formulario", "x": 0, "y": 2, "w": 7, "h": 8},
+        {"label": "comprobante", "x": 7, "y": 2, "w": 5, "h": 8}
+      ]},
+      "comp": ".impeccable/mocks/decision/model-pick.webp"
+    },
+    {
+      "id": "challenger-ticket",
+      "label": "Billetera de trayecto",
+      "verdict": "competitive",
+      "lineage": "billetes aéreos y cupones de viaje",
+      "thesis": "Pagar es completar un itinerario de cupones que deja un recibo verificable.",
+      "palette": ["#FAFAF5", "#17345B", "#C84538", "#69518A"],
+      "materials": ["papel de cupón", "numeración carbón", "sellos de estado"],
+      "viewport": "Una billetera vertical enseña el tramo actual, lo completado y el recibo que quedará al final.",
+      "case": "El progreso y el comprobante encajan muy bien, aunque la asociación con viajes es menos directa que la de servicios públicos.",
+      "risk": "Puede parecer un portal de transporte si los datos de servicio no dominan la composición.",
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "itinerario", "x": 0, "y": 0, "w": 4, "h": 10, "accent": true},
+        {"label": "cupón actual", "x": 4, "y": 0, "w": 8, "h": 10}
+      ]},
+      "comp": ".impeccable/mocks/decision/challenger-ticket.webp",
+      "hero": "https://impeccable.style/worlds/cards/vernacular-ephemera-jet-age-ticket-wallet-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/vernacular-ephemera-jet-age-ticket-wallet.webp"
+    },
+    {
+      "id": "challenger-reference",
+      "label": "Libro de referencia",
+      "verdict": "declined",
+      "lineage": "ediciones técnicas de margen amplio",
+      "thesis": "Las decisiones del pago viven en un riel central entre instrucciones y resumen.",
+      "palette": ["#EFE9DA", "#211F1B", "#B34032"],
+      "materials": ["papel hueso", "reglas de un píxel", "anotaciones"],
+      "viewport": "Dos columnas pequeñas rodean un riel de pasos y controles.",
+      "case": "La precisión es fuerte, pero la lectura editorial ralentiza una tarea frecuente.",
+      "kept": "Una sola regla visual gobierna bordes, foco y separación.",
+      "risk": "Puede sentirse más como documentación que como una operación de pago.",
+      "hero": "https://impeccable.style/worlds/cards/rw-centre-rail-reference-setting-hero.webp"
+    },
+    {
+      "id": "challenger-terminal",
+      "label": "Terminal de fósforo",
+      "verdict": "declined",
+      "lineage": "terminales verdes de sala de máquinas",
+      "thesis": "El sistema imprime cada estado del pago como una conversación verificable.",
+      "palette": ["#07130E", "#69E19A", "#B8F5CC"],
+      "materials": ["vidrio oscuro", "fósforo", "cursor"],
+      "viewport": "Un historial continuo guía la captura de datos con teclado.",
+      "case": "Es eficiente para expertos, pero poco familiar para el público general.",
+      "kept": "Operación completa con teclado y estados siempre escritos.",
+      "risk": "Reduce la confianza de usuarios que esperan formularios convencionales.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-phosphor-terminal-midnight-hero.webp"
+    },
+    {
+      "id": "challenger-industrial",
+      "label": "Etiquetado industrial",
+      "verdict": "declined",
+      "lineage": "señalización de bodega y etiquetas de seguridad",
+      "thesis": "Cada parte del portal se nombra de forma literal y el estado activo se marca físicamente.",
+      "palette": ["#F4F4F0", "#111111", "#F0672F"],
+      "materials": ["algodón blanco", "nylon negro", "etiqueta naranja"],
+      "viewport": "Bloques rotulados dividen el acceso, los servicios y el siguiente paso.",
+      "case": "La claridad verbal funciona, pero su agresividad no corresponde a una tarea sensible.",
+      "kept": "Etiquetas sin ambigüedad y foco activo imposible de confundir.",
+      "risk": "La estética de peligro puede comunicar alarma en vez de confianza.",
+      "hero": "https://impeccable.style/worlds/cards/textiles-weave-drape-fashion-industrial-quote-grammar-hero.webp"
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code", "toggle": true},
+  "canon": true,
+  "canonCard": {
+    "label": "Portal bancario estándar",
+    "thesis": "Un portal blanco y azul con tarjetas limpias y formularios convencionales, ejecutado con gran precisión.",
+    "palette": ["#FFFFFF", "#172033", "#2563EB"],
+    "materials": ["rejilla limpia", "iconografía lineal", "tarjetas"],
+    "viewport": "Cabecera simple, panel de bienvenida y formulario centrado.",
+    "risk": "Es familiar y eficaz, pero visualmente indistinguible de muchos portales financieros.",
+    "comp": ".impeccable/mocks/decision/canon.webp"
+  },
+  "steer": true
+}

@@ -3,139 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="registro.css">
-    <title>Registro Principal</title>
+    <meta name="description" content="Registro de usuario para el portal académico de pagos.">
+    <title>Portal de pagos · Crear cuenta</title>
+    <link rel="icon" href="data:,">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="registro-container">
-        
-        <div class="titulo-caja">
-            <h1>REGISTRO PRINCIPAL</h1>
-        </div>
+<body class="app-page">
+    <a class="skip-link" href="#registro">Ir al formulario</a>
 
-        <form action = "index.html">
-            <div class="form-grid">
-                
-                <!-- Fila 1 -->
-                <div class="form-group span-6">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-                </div>
-                <div class="form-group span-6">
-                    <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
-                </div>
+    <header class="app-header">
+        <a class="brand" href="index.html" aria-label="Portal de pagos, inicio">
+            <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M6 22a11 11 0 1 1 20 0"/><path d="m16 16 7-5"/><circle cx="16" cy="16" r="2"/></svg></span>
+            <span>Portal de pagos</span>
+        </a>
+        <div class="header-meta"><span class="status-dot"></span> Demostración segura y local</div>
+        <a class="btn btn--quiet" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>Volver</a>
+    </header>
 
-                <!-- Fila 2 -->
-                <div class="form-group span-3">
-                    <label for="Tip_documento">Tipo de Documento</label>
-                    <select id="Tip_documento" name="tipo_documento">  
-                        <option value="cc">C.C.</option>
-                        <option value="ce">C.E.</option>    
-                        <option value="pas">Pasaporte</option>
-                    </select>
-                </div>
-                <div class="form-group span-5">
-                    <label for="num_documento">Número de Documento</label>
-                    <input type="number" id="num_documento" name="num_documento" placeholder="Número de Documento" required>
-                </div>
-                <div class="form-group span-4">
-                    <label for="fecha_Nac">Fecha de Nacimiento</label>
-                    <input type="datetime-local" id="fecha_Nac" name="fecha_Nac" placeholder="Fecha de Nacimiento">
-                </div>
-
-                <!-- Fila 3 -->
-                <div class="form-group span-3">
-                    <label for="genero">Género o Sexo</label>
-                    <select name="eligasugenero" id="genero">
-                        <option value=""> ---- </option>
-                        <option value="m">Hombre</option>
-                        <option value="f">Mujer</option>
-                        <option value="o">Otro</option>
-                    </select>
-                </div>
-                <div class="form-group span-9">
-                    <label for="otro_genero">---</label>
-                    <input type="text" id="otro_genero" name="otro_genero" placeholder="Otro*">
-                </div>
-
-                <!-- Fila 4 -->
-                <div class="form-group span-6">
-                    <label for="Email">Correo Electrónico</label>
-                    <input type="email" id="Email" name="Email" placeholder="Correo" required>
-                </div>
-                <div class="form-group span-6">
-                    <label for="Email_recuperacion">Correo de Recuperación</label>
-                    <input type="email" id="Email_recuperacion" name="Email_recuperacion" placeholder="Correo" required>
-                </div>
-
-                <!-- Fila 5 -->
-                <div class="form-group span-4">
-                    <label for="numero-celular">Número de celular</label>
-                    <input type="number" id="numero-celular" name="numero-celular" placeholder="Ingrese su número de teléfono" required>
-                </div>
-                <div class="form-group span-4">
-                    <label for="numero-respaldo">Número de respaldo</label>
-                    <input type="number" id="numero-respaldo" name="numero-respaldo" placeholder="Ingrese el número de respaldo" required>
-                </div>
-                <div class="form-group span-4">
-                    <!-- Espacio vacío para mantener el diseño a 12 columnas -->
-                </div>
-
-                <!-- Fila 6 -->
-                <div class="form-group span-4">
-                    <label for="pais">Selecciona tu país</label>
-                    <select id="pais" name="pais">
-                        <option value="">-- Elige un país --</option>
-                        <option value="AR">Argentina</option>
-                        <option value="CL">Chile</option>
-                        <option value="CO">Colombia</option>
-                        <option value="ES">España</option>
-                        <option value="MX">México</option>
-                        <option value="PE">Perú</option>
-                    </select>
-                </div>
-                <div class="form-group span-4">
-                    <label for="departamento">Seleccione su departamento</label>
-                    <select id="departamento" name="departamento"></select>
-                </div>
-                <div class="form-group span-4">
-                    <label for="ciudad">Seleccione su ciudad</label>
-                    <select id="ciudad" name="ciudad"></select>
-                </div>
-
-            </div> <!-- Cierre correcto de form-grid -->
-
-            <!-- Sección Inferior -->
-            <div class="seccion-inferior">
-                <div class="caja-contrasenas">
-                    <div class="form-group">
-                        <label for="contrasena">Contraseña</label>
-                        <input type="password" id="contrasena" name="contrasena" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="confirmar_contrasena">Confirmación de contraseña</label>
-                        <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" required>
-                    </div>
-                </div>
-
-                <div class="caja-terminos">
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="terminos" name="terminos" required>
-                        <label for="terminos">Aceptación de términos y condiciones</label>
-                    </div>
-                    <a href="tu_archivo.pdf" class="link-terminos">pdf. Términos y condiciones</a>
-                </div>
+    <main class="registration-layout" id="registro">
+        <aside class="progress-rail" aria-label="Progreso de registro">
+            <div>
+                <h1>Configura tu acceso al portal.</h1>
+                <p>Completa los datos esenciales. Todo permanece en tu navegador durante esta demostración.</p>
             </div>
-
-            <!-- Botones -->
-            <div class="caja-botones">
-                <button type="submit" class="btn-enviar">Enviar</button>
-                <button type="reset" class="btn-borrar">Borrar</button>
+            <ol>
+                <li class="is-active"><span>1</span><div><strong>Identidad</strong><small>Datos personales</small></div></li>
+                <li><span>2</span><div><strong>Contacto</strong><small>Canales de recuperación</small></div></li>
+                <li><span>3</span><div><strong>Acceso</strong><small>Contraseña y términos</small></div></li>
+            </ol>
+            <div class="privacy-note">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+                <p><strong>Solo una simulación.</strong> No envíes documentos, claves ni información real.</p>
             </div>
-            
-        </form>
-    </div>
+        </aside>
+
+        <section class="form-surface" aria-labelledby="register-title">
+            <header class="surface-heading">
+                <div><h2 id="register-title">Datos de la cuenta</h2><p class="section-label section-label--after">Lectura inicial</p></div>
+                <span class="reading-badge"><b>0%</b> completado</span>
+            </header>
+
+            <form action="index.html" class="registration-form" data-progress-form>
+                <fieldset>
+                    <legend>Información personal</legend>
+                    <div class="form-grid">
+                        <div class="field span-6"><label for="nombre">Nombre</label><input id="nombre" name="nombre" type="text" autocomplete="given-name" placeholder="Tu nombre" required></div>
+                        <div class="field span-6"><label for="apellido">Apellido</label><input id="apellido" name="apellido" type="text" autocomplete="family-name" placeholder="Tu apellido" required></div>
+                        <div class="field span-4"><label for="Tip_documento">Tipo de documento</label><select id="Tip_documento" name="tipo_documento" required><option value="cc">Cédula de ciudadanía</option><option value="ce">Cédula de extranjería</option><option value="pas">Pasaporte</option></select></div>
+                        <div class="field span-4"><label for="num_documento">Número de documento</label><input id="num_documento" name="num_documento" inputmode="numeric" placeholder="Ej. 1020304050" required></div>
+                        <div class="field span-4"><label for="fecha_Nac">Fecha de nacimiento</label><input id="fecha_Nac" name="fecha_Nac" type="date" required></div>
+                        <div class="field span-4"><label for="genero">Género <span class="optional">Opcional</span></label><select name="genero" id="genero"><option value="">Prefiero no decirlo</option><option value="m">Hombre</option><option value="f">Mujer</option><option value="o">Otro</option></select></div>
+                        <div class="field span-8 optional-field" id="otro-genero-wrap" hidden><label for="otro_genero">¿Cómo te identificas?</label><input type="text" id="otro_genero" name="otro_genero" placeholder="Escribe tu respuesta"></div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contacto y ubicación</legend>
+                    <div class="form-grid">
+                        <div class="field span-6"><label for="Email">Correo electrónico</label><input type="email" id="Email" name="Email" autocomplete="email" placeholder="nombre@correo.com" required></div>
+                        <div class="field span-6"><label for="numero-celular">Número de celular</label><input type="tel" id="numero-celular" name="numero-celular" autocomplete="tel" inputmode="tel" placeholder="300 000 0000" required></div>
+                        <div class="field span-4"><label for="pais">País</label><select id="pais" name="pais" required><option value="">Selecciona</option><option value="AR">Argentina</option><option value="CL">Chile</option><option value="CO">Colombia</option><option value="ES">España</option><option value="MX">México</option><option value="PE">Perú</option></select></div>
+                        <div class="field span-4"><label for="departamento">Departamento o región</label><select id="departamento" name="departamento" required disabled><option value="">Primero elige un país</option></select></div>
+                        <div class="field span-4"><label for="ciudad">Ciudad</label><select id="ciudad" name="ciudad" required disabled><option value="">Primero elige un país</option></select></div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Protege tu acceso</legend>
+                    <div class="form-grid">
+                        <div class="field span-6"><label for="contrasena">Contraseña</label><input type="password" id="contrasena" name="contrasena" autocomplete="new-password" minlength="8" placeholder="Mínimo 8 caracteres" required><small class="field-help">Usa letras, números y un símbolo.</small></div>
+                        <div class="field span-6"><label for="confirmar_contrasena">Confirma la contraseña</label><input type="password" id="confirmar_contrasena" name="confirmar_contrasena" autocomplete="new-password" minlength="8" placeholder="Repítela exactamente" required><small class="field-error" id="password-error"></small></div>
+                    </div>
+                    <label class="terms-row"><input type="checkbox" id="terminos" name="terminos" required><span>Acepto los <a href="#" data-demo-message="Los términos son ilustrativos para esta demostración académica.">términos de la demostración</a> y entiendo que no se realizará ningún pago real.</span></label>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="reset" class="btn btn--quiet">Limpiar formulario</button>
+                    <button type="submit" class="btn btn--primary">Crear cuenta <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <div class="toast" role="status" aria-live="polite"></div>
     <script src="script.js"></script>
 </body>
 </html>

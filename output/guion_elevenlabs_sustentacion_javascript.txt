@@ -1,0 +1,37 @@
+Repasemos el JavaScript de tus dos proyectos. HTML crea los controles, CSS los presenta y JavaScript lee datos y modifica la página. El DOM es la representación del HTML como objetos. Los scripts están al final del body, así que los elementos ya existen cuando se buscan.
+
+Primero, formulario de pizzas.
+
+Las siete constantes guardan referencias al formulario, las tres casillas y sus tres cantidades. Document punto getElementById busca cada elemento por su id. Const impide reasignar la referencia, pero el usuario puede cambiar el control. Checked indica si una casilla está marcada. Value devuelve el contenido del campo como texto, incluso si su tipo es number.
+
+AddEventListener registra una función para el evento submit. Esa función es un callback: espera hasta que se intente enviar y la validación HTML permita continuar. Event es el objeto del evento.
+
+El primer if niega checked de las tres casillas y une los resultados con AND. La negación convierte falso en verdadero. La condición se cumple únicamente si ninguna pizza está marcada. Entonces preventDefault cancela el envío, alert muestra el aviso y return termina la función. Return solo no cancelaría el envío.
+
+Después hay tres comprobaciones iguales, una por variedad. Si la casilla está marcada y Number de su cantidad es menor que uno, se cancela, se avisa y se retorna. Number convierte el texto a número; una cadena vacía se convierte en cero. AND tiene cortocircuito: si la casilla está desmarcada, no evalúa la segunda parte. El comentario sobre cantidad menor que uno está invertido: eso es el error, no el valor válido.
+
+El navegador también valida. Required exige nombre y dirección; min y el paso numérico pueden bloquear cantidades antes de submit. Si todo pasa, el propio formulario envía por GET a recibo. Id sirve para buscar el elemento; name será la clave enviada y value su contenido. Las casillas desmarcadas no se envían.
+
+Segundo, el recibo.
+
+Window punto location punto search obtiene la consulta de la URL. New URLSearchParams crea un objeto para interpretarla. Su método get extrae usuario, dirección y teléfono. Devuelve texto, o null si falta la clave. Una clave presente pero vacía devuelve una cadena vacía.
+
+TextContent más igual agrega cada dato a la etiqueta que ya está en su párrafo. Más igual concatena el texto anterior con el nuevo. TextContent muestra texto literal, sin interpretar etiquetas HTML. Sin parámetros, los datos del cliente terminan mostrando null.
+
+Pedido empieza como un arreglo vacío. Tres if independientes comparan con triple igual el tipo de cada pizza y su valor esperado. Triple igual compara sin convertir tipos. Si coinciden, push agrega una descripción al arreglo. Se usan if separados porque pueden elegirse varias variedades.
+
+Las comillas invertidas crean plantillas: la expresión entre dólar y llaves inserta la cantidad dentro del texto. Const permite push porque cambia el contenido del mismo arreglo. Finalmente, join une sus elementos con coma y espacio, y textContent añade el resultado al párrafo del pedido. Dos napolitanas y una muzzarela producen dos descripciones. No se muestran tamaños ni se calculan precios, y el recibo no vuelve a validar cantidades.
+
+Tercero, el registro de medios de pago.
+
+Select países es un objeto local con las claves CO, MX, AR, CL, ES y PE. Cada país contiene dos arreglos: ciudad y departamento. No hay una consulta a internet. Tres constantes buscan los selectores de país, ciudad y departamento.
+
+El evento change del país ejecuta otro callback. Value obtiene el código elegido, por ejemplo CO, y lo guarda en select v. Dos asignaciones a innerHTML reemplazan las opciones anteriores por mensajes guía. InnerHTML interpreta HTML; aquí crea etiquetas option. Limpiar evita mezclar países.
+
+Select países, consultado con select v entre corchetes, busca una clave dinámica. Con CO obtiene Colombia. El if comprueba que haya datos; con país vacío obtiene undefined y no continúa. Info guarda una referencia al objeto elegido.
+
+Cada forEach recorre un arreglo: primero departamentos y luego ciudades. Su callback recibe un nombre por vuelta. Una plantilla lo inserta en el value y en el texto visible de una opción. InnerHTML más igual agrega esa opción conservando las anteriores. Si usaras solo igual en cada vuelta, quedaría únicamente la última. Al cambiar de país se repite todo.
+
+Para sustentar, reconoce los límites: las ciudades dependen del país, no del departamento. Borrar restablece valores, pero no elimina las opciones dinámicas. El registro no compara contraseñas ni guarda cuentas. El ingreso y los enlaces Pagar ofrecen navegación, sin autenticación ni pagos reales.
+
+Explica cada bloque siguiendo el dato: de dónde viene, qué operación recibe y qué cambia en la pantalla.

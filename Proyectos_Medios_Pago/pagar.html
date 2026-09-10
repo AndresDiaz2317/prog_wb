@@ -1,84 +1,196 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="pagar.css">
-
-    <title>Pago</title>
+    <meta name="description" content="Catálogo y simulador de pago de servicios públicos.">
+    <title>Portal de pagos · Servicios</title>
+    <link rel="icon" href="data:,">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+<body class="app-page payment-page">
+    <a class="skip-link" href="#servicios">Ir a servicios</a>
 
-<body>
+    <header class="app-header">
+        <a class="brand" href="index.html" aria-label="Portal de pagos, inicio">
+            <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M6 22a11 11 0 1 1 20 0"/><path d="m16 16 7-5"/><circle cx="16" cy="16" r="2"/></svg></span>
+            <span>Portal de pagos</span>
+        </a>
+        <nav class="app-nav" aria-label="Navegación principal">
+            <a class="is-active" href="#servicios">Servicios</a>
+            <a href="#historial" data-demo-message="Aún no hay pagos en el historial de esta demostración.">Historial</a>
+            <a href="#ayuda" data-demo-message="Elige un servicio y después selecciona tarjeta o PSE.">Ayuda</a>
+        </nav>
+        <div class="user-chip" aria-label="Sesión de demostración"><span>AS</span><div><strong>Hola, Alejandro</strong><small>Cuenta demo</small></div></div>
+        <a class="icon-button" href="index.html" aria-label="Cerrar sesión"><svg viewBox="0 0 24 24"><path d="M10 17l5-5-5-5M15 12H3M14 4h5a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-5"/></svg></a>
+    </header>
 
-    <div class="contenedor">
+    <main class="payment-main">
+        <section class="dashboard-intro" id="servicios" aria-labelledby="services-title">
+            <div>
+                <h1 id="services-title">¿Qué quieres pagar hoy?</h1>
+                <p>Selecciona una empresa para abrir el formulario. Toda la experiencia es simulada.</p>
+            </div>
+            <div class="reading-panel" aria-label="Estado del recorrido">
+                <span class="reading-value">01</span>
+                <div><strong>Selecciona un servicio</strong><small>Después podrás elegir tarjeta o PSE</small></div>
+                <div class="mini-meter" aria-hidden="true"><i></i></div>
+            </div>
+        </section>
 
-        <div class="pagar-div1">
-
-            <label for="Filtros">Filtros</label>
-
-            <select name="Filtros" id="Filtros">
-                <option value="servicios">Servicios</option>
-            </select>
-
-        </div>
-
-
-        <h2>Seleccione el servicio que desea pagar</h2>
-
-
-        <div class="pagar-div2">
-
-            <div class="servicio">
-                <img src="imagenes/5bf716272d988.webp" alt="Vanti">
-                <span>Vanti</span>
-                <a href="pagar.html">Pagar</a>
+        <section class="service-browser" aria-label="Catálogo de servicios">
+            <div class="filter-bar">
+                <div class="search-shell">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg>
+                    <label class="sr-only" for="service-search">Buscar empresa</label>
+                    <input id="service-search" type="search" placeholder="Buscar empresa" autocomplete="off">
+                </div>
+                <div class="filter-buttons" role="group" aria-label="Filtrar por categoría">
+                    <button class="filter-chip is-active" type="button" data-filter="all">Todos</button>
+                    <button class="filter-chip" type="button" data-filter="hogar">Hogar</button>
+                    <button class="filter-chip" type="button" data-filter="telecom">Telefonía e internet</button>
+                </div>
             </div>
 
-            <div class="servicio">
-                <img src="imagenes/emcali.jpg" alt="Emcali">
-                <span>Emcali</span>
-                <a href="pagar.html">Pagar</a>
+            <div class="service-grid">
+                <article class="service-card" data-category="hogar" data-name="Vanti">
+                    <div class="logo-frame"><img src="imagenes/5bf716272d988.webp" alt="Vanti"></div>
+                    <div class="service-copy"><h2>Vanti</h2><p>Gas natural</p></div>
+                    <button class="pay-service" type="button" data-service="Vanti" data-kind="Gas natural">Pagar <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+                </article>
+                <article class="service-card" data-category="hogar" data-name="Emcali">
+                    <div class="logo-frame"><img src="imagenes/emcali.jpg" alt="Emcali"></div>
+                    <div class="service-copy"><h2>Emcali</h2><p>Servicios integrados</p></div>
+                    <button class="pay-service" type="button" data-service="Emcali" data-kind="Servicios integrados">Pagar <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+                </article>
+                <article class="service-card" data-category="hogar" data-name="Enel">
+                    <div class="logo-frame"><img src="imagenes/enel.png" alt="Enel Colombia"></div>
+                    <div class="service-copy"><h2>Enel</h2><p>Energía eléctrica</p></div>
+                    <button class="pay-service" type="button" data-service="Enel" data-kind="Energía eléctrica">Pagar <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+                </article>
+                <article class="service-card" data-category="hogar" data-name="Air-e">
+                    <div class="logo-frame"><img src="imagenes/air-e.jpg" alt="Air-e"></div>
+                    <div class="service-copy"><h2>Air-e</h2><p>Energía eléctrica</p></div>
+                    <button class="pay-service" type="button" data-service="Air-e" data-kind="Energía eléctrica">Pagar <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+                </article>
+                <article class="service-card" data-category="hogar" data-name="EPM">
+                    <div class="logo-frame"><img src="imagenes/epm.png" alt="EPM"></div>
+                    <div class="service-copy"><h2>EPM</h2><p>Servicios públicos</p></div>
+                    <button class="pay-service" type="button" data-service="EPM" data-kind="Servicios públicos">Pagar <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+                </article>
+                <article class="service-card" data-category="telecom" data-name="Claro">
+                    <div class="logo-frame"><img src="imagenes/claro.webp" alt="Claro"></div>
+                    <div class="service-copy"><h2>Claro</h2><p>Telefonía e internet</p></div>
+                    <button class="pay-service" type="button" data-service="Claro" data-kind="Telefonía e internet">Pagar <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+                </article>
+                <article class="service-card" data-category="telecom" data-name="Movistar">
+                    <div class="logo-frame"><img src="imagenes/movistar.png" alt="Movistar"></div>
+                    <div class="service-copy"><h2>Movistar</h2><p>Telefonía e internet</p></div>
+                    <button class="pay-service" type="button" data-service="Movistar" data-kind="Telefonía e internet">Pagar <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+                </article>
+                <article class="service-card" data-category="telecom" data-name="ETB">
+                    <div class="logo-frame"><img src="imagenes/ETB_Bogotá_logo.svg.webp" alt="ETB"></div>
+                    <div class="service-copy"><h2>ETB</h2><p>Telefonía e internet</p></div>
+                    <button class="pay-service" type="button" data-service="ETB" data-kind="Telefonía e internet">Pagar <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+                </article>
+            </div>
+            <p class="empty-results" hidden>No encontramos una empresa con ese nombre.</p>
+        </section>
+
+        <section class="payment-workspace" id="payment-workspace" aria-labelledby="payment-title" hidden>
+            <div class="payment-flow">
+                <header class="flow-header">
+                    <button class="btn btn--quiet back-to-services" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>Servicios</button>
+                    <div><h2 id="payment-title">Completa el pago</h2><p class="section-label section-label--after">Lectura de pago</p></div>
+                    <span class="demo-tag demo-tag--dark">Simulación</span>
+                </header>
+
+                <ol class="payment-steps" aria-label="Pasos del pago">
+                    <li class="is-complete"><span>1</span><div><strong>Servicio</strong><small class="chosen-service">Vanti</small></div></li>
+                    <li class="is-active"><span>2</span><div><strong>Método</strong><small>Elige cómo pagar</small></div></li>
+                    <li><span>3</span><div><strong>Confirmación</strong><small>Resultado simulado</small></div></li>
+                </ol>
+
+                <div class="payment-body">
+                    <div class="payment-form-column">
+                        <div class="method-switch" role="tablist" aria-label="Método de pago">
+                            <button role="tab" aria-selected="true" aria-controls="card-panel" id="card-tab" class="is-active" type="button" data-method="card">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+                                Tarjeta
+                            </button>
+                            <button role="tab" aria-selected="false" aria-controls="pse-panel" id="pse-tab" type="button" data-method="pse">
+                                <span class="pse-mark">PSE</span>
+                                Débito bancario
+                            </button>
+                        </div>
+
+                        <form id="card-panel" class="method-panel" role="tabpanel" aria-labelledby="card-tab">
+                            <div class="demo-warning"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2.5 20h19L12 3Z"/><path d="M12 9v5M12 17h.01"/></svg><span>Usa datos ficticios. Este formulario no procesa ni almacena tarjetas.</span></div>
+                            <div class="field"><label for="card-number">Número de tarjeta</label><div class="input-shell"><input id="card-number" name="card-number" inputmode="numeric" autocomplete="cc-number" placeholder="0000 0000 0000 0000" maxlength="19" required><span class="card-brand">CARD</span></div></div>
+                            <div class="field"><label for="card-name">Nombre del titular</label><input id="card-name" name="card-name" autocomplete="cc-name" placeholder="Como aparece en la tarjeta" required></div>
+                            <div class="form-grid compact-grid">
+                                <div class="field span-6"><label for="card-expiry">Vencimiento</label><input id="card-expiry" name="card-expiry" inputmode="numeric" autocomplete="cc-exp" placeholder="MM / AA" maxlength="7" required></div>
+                                <div class="field span-6"><div class="label-row"><label for="card-cvv">CVV</label><button type="button" class="help-button" data-demo-message="El CVV son los 3 dígitos impresos al respaldo de una tarjeta ficticia.">¿Qué es?</button></div><input id="card-cvv" name="card-cvv" inputmode="numeric" autocomplete="cc-csc" placeholder="000" maxlength="3" required></div>
+                            </div>
+                            <button class="btn btn--primary btn--full submit-payment" type="submit">Simular pago de <span class="payment-amount">$ 86.420</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+                        </form>
+
+                        <form id="pse-panel" class="method-panel" role="tabpanel" aria-labelledby="pse-tab" hidden>
+                            <div class="pse-explainer">
+                                <span class="pse-mark pse-mark--large">PSE</span>
+                                <div><h3>Pago desde tu banco</h3><p>Al continuar, esta demostración simulará una redirección a la entidad seleccionada. No se abrirá ningún banco real.</p></div>
+                            </div>
+                            <div class="form-grid compact-grid">
+                                <div class="field span-6"><label for="person-type">Tipo de persona</label><select id="person-type" required><option value="">Selecciona</option><option>Natural</option><option>Jurídica</option></select></div>
+                                <div class="field span-6"><label for="pse-document">Documento</label><input id="pse-document" inputmode="numeric" placeholder="Número de identificación" required></div>
+                            </div>
+                            <div class="field"><label for="bank">Entidad financiera</label><select id="bank" required><option value="">Selecciona tu banco</option><option>Bancolombia</option><option>Banco de Bogotá</option><option>Davivienda</option><option>BBVA Colombia</option><option>Banco de Occidente</option><option>Nequi</option><option>Otro banco</option></select></div>
+                            <label class="check-row consent-row"><input type="checkbox" required><span>Entiendo que esta redirección es simulada y no representa una transacción real.</span></label>
+                            <button class="btn btn--primary btn--full submit-payment" type="submit">Continuar a PSE <span class="payment-amount">$ 86.420</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+                        </form>
+                    </div>
+
+                    <aside class="payment-summary" aria-label="Resumen del pago">
+                        <div class="summary-gauge" aria-hidden="true"><span>02</span><i></i></div>
+                        <div class="summary-provider">
+                            <div class="summary-logo"><img src="imagenes/5bf716272d988.webp" alt="" id="summary-logo"></div>
+                            <div><small id="summary-kind">Gas natural</small><h3 id="summary-service">Vanti</h3></div>
+                        </div>
+                        <dl>
+                            <div><dt>Referencia</dt><dd>4827 1039</dd></div>
+                            <div><dt>Periodo</dt><dd>Agosto 2026</dd></div>
+                            <div><dt>Valor del servicio</dt><dd>$ 84.900</dd></div>
+                            <div><dt>Costo de operación</dt><dd>$ 1.520</dd></div>
+                            <div class="summary-total"><dt>Total simulado</dt><dd>$ 86.420</dd></div>
+                        </dl>
+                        <p><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg> Tus datos no salen de este navegador.</p>
+                    </aside>
+                </div>
             </div>
 
-            <div class="servicio">
-                <img src="imagenes/enel.png" alt="Enel">
-                <span>Enel</span>
-                <a href="pagar.html">Pagar</a>
+            <div class="success-state" hidden>
+                <div class="success-meter" aria-hidden="true"><span>100</span><i></i></div>
+                <p class="section-label">Lectura completada</p>
+                <h2>Simulación finalizada</h2>
+                <p class="success-message">El pago con tarjeta fue simulado correctamente. No se realizó ningún cobro.</p>
+                <dl class="receipt-data">
+                    <div><dt>Servicio</dt><dd class="receipt-service">Vanti</dd></div>
+                    <div><dt>Valor</dt><dd>$ 86.420</dd></div>
+                    <div><dt>Referencia demo</dt><dd>SIM-260910-4827</dd></div>
+                </dl>
+                <div class="success-actions">
+                    <button class="btn btn--secondary new-payment" type="button">Hacer otra simulación</button>
+                    <a class="btn btn--primary" href="index.html">Volver al inicio</a>
+                </div>
             </div>
+        </section>
+    </main>
 
-            <div class="servicio">
-                <img src="imagenes/air-e.jpg" alt="Air-e">
-                <span>Air-e</span>
-                <a href="pagar.html">Pagar</a>
-            </div>
-
-            <div class="servicio">
-                <img src="imagenes/epm.png" alt="EPM">
-                <span>EPM</span>
-                <a href="pagar.html">Pagar</a>
-            </div>
-
-            <div class="servicio">
-                <img src="imagenes/claro.webp" alt="Claro">
-                <span>Claro</span>
-                <a href="pagar.html">Pagar</a>
-            </div>
-
-            <div class="servicio">
-                <img src="imagenes/movistar.png" alt="Movistar">
-                <span>Movistar</span>
-                <a href="pagar.html">Pagar</a>
-            </div>
-
-            <div class="servicio">
-                <img src="imagenes/ETB_Bogotá_logo.svg.webp" alt="ETB">
-                <span>ETB</span>
-                <a href="pagar.html">Pagar</a>
-            </div>
-    </div>
-
+    <footer class="site-footer"><span>Portal de pagos · Proyecto académico</span><span>Sin transacciones reales</span></footer>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
 </body>
-
 </html>

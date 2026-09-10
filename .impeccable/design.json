@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-10T10:34:24.5354476-05:00",
+  "title": "Design System: Portal de pagos",
+  "extensions": {
+    "colorMeta": {
+      "ink": { "role": "neutral", "displayName": "Tinta profunda", "canonical": "#132a3a", "tonalRamp": ["oklch(15% 0.042 240.9)", "oklch(27% 0.042 240.9)", "oklch(39% 0.042 240.9)", "oklch(51% 0.042 240.9)", "oklch(63% 0.042 240.9)", "oklch(75% 0.042 240.9)", "oklch(87% 0.042 240.9)", "oklch(95% 0.042 240.9)"] },
+      "ink-secondary": { "role": "neutral", "displayName": "Tinta secundaria", "canonical": "#274352", "tonalRamp": ["oklch(15% 0.043 233)", "oklch(27% 0.043 233)", "oklch(39% 0.043 233)", "oklch(51% 0.043 233)", "oklch(63% 0.043 233)", "oklch(75% 0.043 233)", "oklch(87% 0.043 233)", "oklch(95% 0.043 233)"] },
+      "petrol": { "role": "primary", "displayName": "Azul petróleo operativo", "canonical": "#124e61", "tonalRamp": ["oklch(15% 0.066 224)", "oklch(27% 0.066 224)", "oklch(39% 0.066 224)", "oklch(51% 0.066 224)", "oklch(63% 0.066 224)", "oklch(75% 0.066 224)", "oklch(87% 0.066 224)", "oklch(95% 0.066 224)"] },
+      "teal": { "role": "primary", "displayName": "Turquesa de control", "canonical": "#176b87", "tonalRamp": ["oklch(15% 0.087 226)", "oklch(27% 0.087 226)", "oklch(39% 0.087 226)", "oklch(51% 0.087 226)", "oklch(63% 0.087 226)", "oklch(75% 0.087 226)", "oklch(87% 0.087 226)", "oklch(95% 0.087 226)"] },
+      "teal-soft": { "role": "primary", "displayName": "Turquesa pálido", "canonical": "#d8e8e8", "tonalRamp": ["oklch(15% 0.017 196.9)", "oklch(27% 0.017 196.9)", "oklch(39% 0.017 196.9)", "oklch(51% 0.017 196.9)", "oklch(63% 0.017 196.9)", "oklch(75% 0.017 196.9)", "oklch(87% 0.017 196.9)", "oklch(95% 0.017 196.9)"] },
+      "signal": { "role": "secondary", "displayName": "Naranja señal", "canonical": "#f06c3b", "tonalRamp": ["oklch(15% 0.175 39.9)", "oklch(27% 0.175 39.9)", "oklch(39% 0.175 39.9)", "oklch(51% 0.175 39.9)", "oklch(63% 0.175 39.9)", "oklch(75% 0.175 39.9)", "oklch(87% 0.175 39.9)", "oklch(95% 0.175 39.9)"] },
+      "signal-deep": { "role": "secondary", "displayName": "Naranja señal profundo", "canonical": "#cf4f24", "tonalRamp": ["oklch(15% 0.171 37.9)", "oklch(27% 0.171 37.9)", "oklch(39% 0.171 37.9)", "oklch(51% 0.171 37.9)", "oklch(63% 0.171 37.9)", "oklch(75% 0.171 37.9)", "oklch(87% 0.171 37.9)", "oklch(95% 0.171 37.9)"] },
+      "paper": { "role": "neutral", "displayName": "Marfil mate", "canonical": "#f4f1e8", "tonalRamp": ["oklch(15% 0.012 91.5)", "oklch(27% 0.012 91.5)", "oklch(39% 0.012 91.5)", "oklch(51% 0.012 91.5)", "oklch(63% 0.012 91.5)", "oklch(75% 0.012 91.5)", "oklch(87% 0.012 91.5)", "oklch(95% 0.012 91.5)"] },
+      "paper-bright": { "role": "neutral", "displayName": "Marfil luminoso", "canonical": "#fffdf7", "tonalRamp": ["oklch(15% 0.008 91.5)", "oklch(27% 0.008 91.5)", "oklch(39% 0.008 91.5)", "oklch(51% 0.008 91.5)", "oklch(63% 0.008 91.5)", "oklch(75% 0.008 91.5)", "oklch(87% 0.008 91.5)", "oklch(95% 0.008 91.5)"] },
+      "paper-deep": { "role": "neutral", "displayName": "Marfil profundo", "canonical": "#e9e4d8", "tonalRamp": ["oklch(15% 0.017 88)", "oklch(27% 0.017 88)", "oklch(39% 0.017 88)", "oklch(51% 0.017 88)", "oklch(63% 0.017 88)", "oklch(75% 0.017 88)", "oklch(87% 0.017 88)", "oklch(95% 0.017 88)"] },
+      "line": { "role": "neutral", "displayName": "Línea calibrada", "canonical": "#c9c6ba", "tonalRamp": ["oklch(15% 0.017 95.3)", "oklch(27% 0.017 95.3)", "oklch(39% 0.017 95.3)", "oklch(51% 0.017 95.3)", "oklch(63% 0.017 95.3)", "oklch(75% 0.017 95.3)", "oklch(87% 0.017 95.3)", "oklch(95% 0.017 95.3)"] },
+      "muted": { "role": "neutral", "displayName": "Lectura atenuada", "canonical": "#5d6c72", "tonalRamp": ["oklch(15% 0.02 223.9)", "oklch(27% 0.02 223.9)", "oklch(39% 0.02 223.9)", "oklch(51% 0.02 223.9)", "oklch(63% 0.02 223.9)", "oklch(75% 0.02 223.9)", "oklch(87% 0.02 223.9)", "oklch(95% 0.02 223.9)"] },
+      "success": { "role": "tertiary", "displayName": "Verde confirmación", "canonical": "#2f745b", "tonalRamp": ["oklch(15% 0.081 166.5)", "oklch(27% 0.081 166.5)", "oklch(39% 0.081 166.5)", "oklch(51% 0.081 166.5)", "oklch(63% 0.081 166.5)", "oklch(75% 0.081 166.5)", "oklch(87% 0.081 166.5)", "oklch(95% 0.081 166.5)"] },
+      "error": { "role": "tertiary", "displayName": "Rojo de error", "canonical": "#a93a2c", "tonalRamp": ["oklch(15% 0.148 30.2)", "oklch(27% 0.148 30.2)", "oklch(39% 0.148 30.2)", "oklch(51% 0.148 30.2)", "oklch(63% 0.148 30.2)", "oklch(75% 0.148 30.2)", "oklch(87% 0.148 30.2)", "oklch(95% 0.148 30.2)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Relato de acceso y lectura final." },
+      "headline": { "displayName": "Headline", "purpose": "Apertura de catálogos y secciones principales." },
+      "title": { "displayName": "Title", "purpose": "Encabezados de formularios y superficies operativas." },
+      "body": { "displayName": "Body", "purpose": "Instrucciones, contenido y explicación de la simulación." },
+      "label": { "displayName": "Label", "purpose": "Lecturas, estados y rótulos instrumentales." }
+    },
+    "shadows": [
+      { "name": "surface-operational", "value": "0 18px 50px rgba(19, 42, 58, .12)", "purpose": "Elevar formularios y el flujo de pago." },
+      { "name": "action-primary", "value": "0 9px 22px rgba(23, 107, 135, .24)", "purpose": "Separar la acción primaria en reposo." },
+      { "name": "action-primary-hover", "value": "0 12px 28px rgba(18, 78, 97, .3)", "purpose": "Confirmar el hover de la acción primaria." },
+      { "name": "toast", "value": "0 12px 32px rgba(19, 42, 58, .28)", "purpose": "Separar mensajes flotantes del contenido." }
+    ],
+    "motion": [
+      { "name": "ease-meter", "value": "cubic-bezier(.16, 1, .3, 1)", "purpose": "Agujas, elevaciones y entradas con desaceleración expresiva." },
+      { "name": "control-state", "value": "180ms ease", "purpose": "Borde, halo y fondo de campos." },
+      { "name": "button-shift", "value": "200ms cubic-bezier(.16, 1, .3, 1)", "purpose": "Desplazamiento vertical de botones." },
+      { "name": "meter-progress", "value": "650ms cubic-bezier(.16, 1, .3, 1)", "purpose": "Avance de la aguja al cambiar foco o método." },
+      { "name": "reduced-motion", "value": "0.01ms", "purpose": "Duración efectiva para usuarios que prefieren movimiento reducido." }
+    ],
+    "breakpoints": [
+      { "name": "compact-desktop", "value": "1080px" },
+      { "name": "tablet-stack", "value": "820px" },
+      { "name": "mobile", "value": "600px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Acción principal firme, elevada y de alto contraste.",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\">Continuar <span aria-hidden=\"true\">→</span></button>",
+      "css": ".ds-btn-primary { min-height:46px; padding:11px 18px; display:inline-flex; align-items:center; justify-content:center; gap:9px; border:0; border-radius:12px; color:var(--paper-bright, #fffdf7); background:var(--teal, #176b87); box-shadow:0 9px 22px rgba(23,107,135,.24); font-family:Manrope, 'Segoe UI', sans-serif; font-weight:750; line-height:1; cursor:pointer; transition:transform .2s cubic-bezier(.16,1,.3,1), background-color .2s ease, box-shadow .2s ease; } .ds-btn-primary:hover { background:var(--petrol, #124e61); box-shadow:0 12px 28px rgba(18,78,97,.3); transform:translateY(-2px); } .ds-btn-primary:active { transform:translateY(0); } .ds-btn-primary:focus-visible { outline:3px solid var(--signal, #f06c3b); outline-offset:3px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Acción alternativa sobre una capa turquesa pálida.",
+      "html": "<button class=\"ds-btn-secondary\" type=\"button\">Volver</button>",
+      "css": ".ds-btn-secondary { min-height:46px; padding:11px 18px; border:0; border-radius:12px; color:var(--ink, #132a3a); background:var(--teal-soft, #d8e8e8); font-family:Manrope, 'Segoe UI', sans-serif; font-weight:750; line-height:1; cursor:pointer; transition:transform .2s cubic-bezier(.16,1,.3,1), background-color .2s ease; } .ds-btn-secondary:hover { background:#c7dddd; transform:translateY(-2px); } .ds-btn-secondary:active { transform:translateY(0); } .ds-btn-secondary:focus-visible { outline:3px solid var(--signal, #f06c3b); outline-offset:3px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Campo explícito sobre marfil luminoso con halo de foco turquesa.",
+      "html": "<label class=\"ds-field\"><span>Número de referencia</span><input type=\"text\" placeholder=\"Ingresa la referencia\"></label>",
+      "css": ".ds-field { display:flex; flex-direction:column; gap:7px; color:var(--ink-secondary, #274352); font-family:Manrope, 'Segoe UI', sans-serif; font-size:.84rem; font-weight:700; } .ds-field input { min-height:50px; padding:12px 14px; border:1px solid var(--line, #c9c6ba); border-radius:12px; color:var(--ink, #132a3a); background:var(--paper-bright, #fffdf7); font:inherit; font-size:1rem; font-weight:400; transition:border-color .18s ease, box-shadow .18s ease; } .ds-field input:hover { border-color:#93a5a9; } .ds-field input:focus { outline:none; border-color:var(--teal, #176b87); box-shadow:0 0 0 3px rgba(23,107,135,.14); } .ds-field input:focus-visible { outline:3px solid var(--signal, #f06c3b); outline-offset:3px; }"
+    },
+    {
+      "name": "Navigation Link",
+      "kind": "nav",
+      "description": "Navegación plana que revela una película de tinta al activarse.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Principal\"><a href=\"#\">Inicio</a><a class=\"is-active\" href=\"#\">Servicios</a><a href=\"#\">Ayuda</a></nav>",
+      "css": ".ds-nav { display:flex; align-items:center; gap:8px; font-family:Manrope, 'Segoe UI', sans-serif; } .ds-nav a { padding:8px 12px; border-radius:9px; color:var(--muted, #5d6c72); font-size:.84rem; font-weight:700; text-decoration:none; } .ds-nav a:hover, .ds-nav a.is-active { color:var(--ink, #132a3a); background:rgba(19,42,58,.07); } .ds-nav a:focus-visible { outline:3px solid var(--signal, #f06c3b); outline-offset:3px; }"
+    },
+    {
+      "name": "Active Filter Chip",
+      "kind": "chip",
+      "refersTo": "filter-chip-active",
+      "description": "Filtro compacto que adquiere borde y superficie al seleccionarse.",
+      "html": "<button class=\"ds-filter-chip is-active\" type=\"button\">Todos</button>",
+      "css": ".ds-filter-chip { padding:8px 13px; border:1px solid transparent; border-radius:999px; color:var(--muted, #5d6c72); background:transparent; font-family:Manrope, 'Segoe UI', sans-serif; font-size:.76rem; font-weight:700; cursor:pointer; } .ds-filter-chip:hover { color:var(--ink, #132a3a); } .ds-filter-chip.is-active { color:var(--ink, #132a3a); border-color:var(--line, #c9c6ba); background:var(--paper-bright, #fffdf7); } .ds-filter-chip:focus-visible { outline:3px solid var(--signal, #f06c3b); outline-offset:3px; }"
+    },
+    {
+      "name": "Service Card",
+      "kind": "card",
+      "description": "Celda plana del catálogo que se activa con luz, elevación y una flecha direccional.",
+      "html": "<article class=\"ds-service-card\"><div class=\"ds-service-logo\" aria-hidden=\"true\">LOGO</div><div><h3>Vanti</h3><p>Gas natural</p></div><button type=\"button\">Pagar servicio <span aria-hidden=\"true\">→</span></button></article>",
+      "css": ".ds-service-card { min-height:260px; padding:26px; display:flex; flex-direction:column; border-right:1px solid var(--line, #c9c6ba); border-bottom:1px solid var(--line, #c9c6ba); color:var(--ink, #132a3a); background:transparent; font-family:Manrope, 'Segoe UI', sans-serif; transition:background-color .24s ease, transform .24s cubic-bezier(.16,1,.3,1); } .ds-service-card:hover { background:var(--paper-bright, #fffdf7); transform:translateY(-4px); } .ds-service-logo { height:82px; color:var(--muted, #5d6c72); font-size:.72rem; font-weight:800; letter-spacing:.08em; } .ds-service-card div:nth-child(2) { margin-top:auto; } .ds-service-card h3 { margin:0 0 2px; font-size:1.25rem; letter-spacing:-.025em; } .ds-service-card p { margin:0; color:var(--muted, #5d6c72); font-size:.75rem; } .ds-service-card button { margin-top:20px; padding:0; align-self:flex-start; border:0; color:var(--teal, #176b87); background:transparent; font:inherit; font-weight:800; cursor:pointer; } .ds-service-card button:hover span { display:inline-block; transform:translateX(4px); } .ds-service-card button:focus-visible { outline:3px solid var(--signal, #f06c3b); outline-offset:3px; }"
+    },
+    {
+      "name": "Meter Progress",
+      "kind": "custom",
+      "description": "Firma visual que une cifra, escala y aguja naranja para mostrar avance real.",
+      "html": "<div class=\"ds-meter\" role=\"img\" aria-label=\"Progreso 64 por ciento\"><strong>64</strong><span>Lectura del proceso</span><i></i></div>",
+      "css": ".ds-meter { width:390px; max-width:100%; padding:20px 22px; display:grid; grid-template-columns:auto 1fr; align-items:center; gap:4px 16px; border-top:1px solid var(--line, #c9c6ba); border-bottom:1px solid var(--line, #c9c6ba); color:var(--ink, #132a3a); font-family:Manrope, 'Segoe UI', sans-serif; } .ds-meter strong { grid-row:span 2; color:var(--signal, #f06c3b); font-size:2.5rem; font-weight:800; line-height:1; font-variant-numeric:tabular-nums; } .ds-meter span { font-size:.8rem; font-weight:800; } .ds-meter i { grid-column:2; height:3px; margin-top:8px; background:linear-gradient(to right, var(--signal, #f06c3b) 64%, var(--line, #c9c6ba) 64%); transform-origin:left; transition:transform .65s cubic-bezier(.16,1,.3,1); }"
+    },
+    {
+      "name": "Payment Method Switch",
+      "kind": "custom",
+      "description": "Pestañas planas cuyo estado activo se lee como una aguja sobre la regla inferior.",
+      "html": "<div class=\"ds-method-switch\" role=\"tablist\"><button class=\"is-active\" role=\"tab\" aria-selected=\"true\">Tarjeta</button><button role=\"tab\" aria-selected=\"false\">PSE</button></div>",
+      "css": ".ds-method-switch { display:grid; grid-template-columns:1fr 1fr; border-bottom:1px solid var(--line, #c9c6ba); font-family:Manrope, 'Segoe UI', sans-serif; } .ds-method-switch button { min-height:58px; padding:12px; border:0; color:var(--muted, #5d6c72); background:transparent; font:inherit; font-weight:800; cursor:pointer; } .ds-method-switch button:hover { color:var(--ink, #132a3a); } .ds-method-switch button.is-active { color:var(--ink, #132a3a); box-shadow:inset 0 -3px var(--signal, #f06c3b); } .ds-method-switch button:focus-visible { outline:3px solid var(--signal, #f06c3b); outline-offset:3px; }"
+    },
+    {
+      "name": "Demo Warning",
+      "kind": "custom",
+      "description": "Aviso cálido y directo que separa la demostración de una transacción real.",
+      "html": "<div class=\"ds-demo-warning\" role=\"note\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3 2.5 20h19L12 3Z\"/><path d=\"M12 9v5M12 17h.01\"/></svg><span>Usa datos ficticios. Este formulario no procesa ni almacena tarjetas.</span></div>",
+      "css": ".ds-demo-warning { padding:14px 16px; display:flex; gap:12px; border-radius:12px; color:#66412f; background:#fce7da; font-family:Manrope, 'Segoe UI', sans-serif; font-size:.78rem; } .ds-demo-warning svg { flex:0 0 auto; width:1.2em; height:1.2em; margin-top:1px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Lectura de medidor",
+    "overview": "El sistema convierte una tarea financiera simulada en una lectura progresiva y comprensible. Carátulas numeradas, líneas calibradas, agujas naranjas y cifras tabulares hacen visible el avance sin imitar la estética de un banco; el marfil mate y el azul petróleo sostienen una atmósfera serena, directa y académica.\n\nLa interfaz se siente instrumental pero humana: jerarquías grandes, superficies contenidas y estados inequívocos reducen la duda antes de pedir datos sensibles. La expresión vive en el movimiento funcional de los indicadores y en el contraste puntual de la señal, mientras el contenido conserva una densidad cómoda para operar en escritorio o móvil.",
+    "keyCharacteristics": [
+      "Paleta mate de marfil y azul petróleo con una señal naranja escasa y precisa.",
+      "Números, reglas finas, carátulas y agujas como lenguaje recurrente de progreso.",
+      "Tipografía Manrope compacta, firme y altamente legible.",
+      "Superficies de formulario elevadas; catálogos y navegación mayormente planos.",
+      "Estados de foco, avance, éxito y error visibles sin depender solo del texto."
+    ],
+    "rules": [
+      { "name": "The Signal Is a Needle Rule", "body": "El naranja señala foco, avance, selección o total; nunca llena grandes superficies sin una función de estado.", "section": "colors" },
+      { "name": "The Warm Canvas Rule", "body": "La experiencia descansa sobre marfil, no sobre blanco clínico ni sobre grises azulados de banca genérica.", "section": "colors" },
+      { "name": "The One Dial Face Rule", "body": "Manrope cubre toda la interfaz; la jerarquía se construye con escala, peso, tracking y cifras tabulares, no mezclando familias.", "section": "typography" },
+      { "name": "The Reading Order Rule", "body": "Al apilar, el contexto y el estado preceden siempre al campo o acción que explican.", "section": "layout" },
+      { "name": "The Lift Only What Acts Rule", "body": "Las sombras se reservan para superficies de tarea o respuesta inmediata; navegación, filtros y catálogo permanecen planos por defecto.", "section": "elevation" },
+      { "name": "The Contained Curve Rule", "body": "Redondear sirve para agrupar y proteger una lectura; no se aplican cápsulas a botones rectangulares ni curvas exageradas a superficies grandes.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do usar el naranja para conectar foco, selección y avance con una lectura visible.",
+      "Do mantener cifras de progreso, importes y referencias con numerales tabulares.",
+      "Do conservar etiquetas explícitas, foco visible y mensajes claros sobre la naturaleza simulada del flujo.",
+      "Do apilar contexto, resumen y formulario en un orden que preserve la lectura en móvil.",
+      "Do sostener la interfaz con marfil mate, reglas finas y superficies de captura puntualmente elevadas."
+    ],
+    "donts": [
+      "Don't convertir el portal en una cuadrícula de tarjetas bancarias azules intercambiables.",
+      "Don't usar el naranja como fondo decorativo dominante ni como sustituto indiscriminado del turquesa interactivo.",
+      "Don't añadir sombras a cada tarjeta, filtro o bloque de navegación.",
+      "Don't esconder la condición de demostración ni presentar el flujo como una transacción real.",
+      "Don't desconectar agujas, lecturas o indicadores de los estados reales de foco, selección y progreso."
+    ]
+  }
+}

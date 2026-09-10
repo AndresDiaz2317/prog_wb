@@ -1,30 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portal Principal de Pagos</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal académico para simular el pago de servicios públicos.">
+    <title>Portal de pagos · Acceso</title>
+    <link rel="icon" href="data:,">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-login">
+    <a class="skip-link" href="#acceso">Ir al formulario de acceso</a>
 
-        <form action = "pagar.html">
-        <div class = "principio">
-            <h1>Portal de pago de los servicios publicos</h1>
-            <h2>Iniciar sesion</h2>
-            <span>Nombre o Email</span>
-            <input type="text" name="usuario" placeholder="Usuario" required>
+    <main class="login-shell">
+        <section class="login-story" aria-labelledby="welcome-title">
+            <div class="brand brand--light" aria-label="Portal de pagos">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 32 32"><path d="M6 22a11 11 0 1 1 20 0"/><path d="m16 16 7-5"/><circle cx="16" cy="16" r="2"/></svg>
+                </span>
+                <span>Portal de pagos</span>
+            </div>
 
-            <span>Contraseña</span>
-            <label for="contrasena">Contraseña</label>
-            <input type="password" name="contrasena" placeholder="Contraseña" required>
-            <button type="submit">Iniciar Sesion</button>
+            <div class="story-copy">
+                <h1 id="welcome-title">Tus servicios,<br>en una sola lectura.</h1>
+                <p>Consulta proveedores y recorre una experiencia de pago simulada, sencilla y transparente.</p>
+                <p class="demo-tag">Demostración académica</p>
+            </div>
 
-            <button type="submit"><a href="registro.html">Registrarse</a></button>
+            <div class="meter-scene" aria-label="Recorrido del portal: acceder, elegir y pagar">
+                <div class="meter-scale" aria-hidden="true">
+                    <span>0</span><span>25</span><span>50</span><span>75</span><span>100</span>
+                    <i class="meter-needle"></i>
+                </div>
+                <ol class="journey-list">
+                    <li class="is-active"><span>Accede</span><small>Tu punto de entrada</small></li>
+                    <li><span>Elige</span><small>Selecciona el servicio</small></li>
+                    <li><span>Paga</span><small>Simula tarjeta o PSE</small></li>
+                </ol>
+            </div>
 
-        </div>
+            <p class="story-footnote">No procesamos pagos ni almacenamos información financiera.</p>
+        </section>
 
-        </form>
-    </body>
+        <section class="login-panel" id="acceso" aria-labelledby="login-title">
+            <div class="panel-topline">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span>Sistema disponible</span>
+                <span class="panel-code">COL · WEB</span>
+            </div>
+
+            <div class="login-form-wrap">
+                <header class="form-heading">
+                    <h2 id="login-title">Inicia sesión</h2>
+                    <p>Ingresa para ver los servicios disponibles.</p>
+                </header>
+
+                <form action="pagar.html" class="auth-form">
+                    <div class="field">
+                        <label for="usuario">Correo electrónico</label>
+                        <div class="input-shell">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z"/><path d="m3 7 9 6 9-6"/></svg>
+                            <input id="usuario" type="email" name="usuario" placeholder="nombre@correo.com" autocomplete="email" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="label-row">
+                            <label for="contrasena">Contraseña</label>
+                            <a href="#" class="text-link" data-demo-message="La recuperación de contraseña es parte de esta demostración.">¿La olvidaste?</a>
+                        </div>
+                        <div class="input-shell">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+                            <input id="contrasena" type="password" name="contrasena" placeholder="Ingresa tu contraseña" autocomplete="current-password" minlength="6" required>
+                            <button class="icon-button password-toggle" type="button" aria-label="Mostrar contraseña">
+                                <svg viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <label class="check-row">
+                        <input type="checkbox" name="recordar">
+                        <span>Recordarme en este dispositivo</span>
+                    </label>
+
+                    <button class="btn btn--primary btn--full" type="submit">
+                        Entrar al portal
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                    </button>
+                </form>
+
+                <div class="register-prompt">
+                    <span>¿Primera vez aquí?</span>
+                    <a class="btn btn--secondary" href="registro.html">Crear una cuenta</a>
+                </div>
+            </div>
+
+            <footer class="panel-footer">
+                <span>Experiencia simulada</span>
+                <span aria-hidden="true">·</span>
+                <a href="#" data-demo-message="Este portal es un ejercicio académico sin operaciones financieras reales.">Acerca de esta demo</a>
+            </footer>
+        </section>
+    </main>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+</body>
 </html>
