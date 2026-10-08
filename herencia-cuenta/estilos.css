@@ -1,0 +1,109 @@
+/* Negro, dorado y tonos cálidos. No se necesitan librerías ni fuentes externas. */
+:root {
+    color-scheme: dark;
+    --fondo: #11100e;
+    --panel: #1c1a17;
+    --superficie: #24211c;
+    --dorado: #dfbc72;
+    --dorado-claro: #f0d498;
+    --texto: #f5efe2;
+    --suave: #bfb7a7;
+    --linea: #4a4233;
+    --error: #ffb6a7;
+    --exito: #b7d6aa;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fondo); color: var(--texto); font-family: Georgia, 'Times New Roman', serif; }
+input, select, button, .ayuda, .nota, .etiqueta, small, .cuentas, dl, table, footer, .aviso, .introduccion p, label, .contador { font-family: 'Segoe UI', sans-serif; }
+a { color: var(--dorado); text-underline-offset: 4px; }
+::selection { background: var(--dorado); color: var(--fondo); }
+:focus-visible { outline: 3px solid var(--dorado-claro); outline-offset: 4px; }
+
+.cabecera { max-width: 1320px; margin: auto; padding: 26px 40px; display: flex; justify-content: space-between; align-items: center; gap: 20px; border-bottom: 1px solid var(--linea); }
+.marca { display: flex; align-items: baseline; gap: 12px; font-size: 2rem; font-weight: bold; text-decoration: none; letter-spacing: 0.03em; }
+.marca span { color: var(--suave); font: 1rem 'Segoe UI', sans-serif; }
+.etiqueta, .contador { color: var(--suave); font-size: 0.85rem; line-height: 1.5; }
+main { max-width: 1320px; margin: auto; padding: 42px 40px 64px; }
+.introduccion { margin-bottom: 36px; }
+h1 { margin: 0 0 16px; font-size: clamp(2.3rem, 4vw, 3.5rem); font-weight: normal; line-height: 1.1; }
+h1 span { color: var(--dorado); }
+.introduccion p { color: var(--suave); max-width: 70ch; line-height: 1.65; margin: 0; }
+h2 { font-size: 1.55rem; font-weight: normal; margin: 0 0 12px; }
+h3 { font-size: 1.2rem; margin: 0 0 12px; font-weight: normal; }
+.distribucion { display: grid; grid-template-columns: 330px minmax(0, 1fr); gap: 40px; align-items: start; }
+.panel { background: var(--panel); border: 1px solid var(--linea); border-radius: 12px; padding: 26px; }
+.contenido { min-width: 0; }
+.ayuda { font-size: 0.92rem; line-height: 1.6; color: var(--suave); margin: 0 0 18px; }
+label { display: block; font-size: 0.9rem; margin: 20px 0 8px; color: var(--texto); }
+input, select { width: 100%; min-width: 0; min-height: 46px; border: 1px solid #6c604a; border-radius: 6px; padding: 10px 12px; background: var(--fondo); color: var(--texto); font-size: 1rem; caret-color: var(--dorado); }
+input::placeholder { color: var(--suave); opacity: 1; }
+small { display: block; color: var(--suave); font-size: 0.8rem; line-height: 1.5; margin-top: 6px; }
+button { min-height: 46px; border: 1px solid transparent; border-radius: 6px; padding: 11px 18px; background: var(--dorado); color: var(--fondo); font-size: 0.95rem; font-weight: 600; cursor: pointer; }
+button:hover { background: var(--dorado-claro); }
+button:disabled { opacity: 0.55; cursor: not-allowed; }
+.crear button { width: 100%; margin-top: 26px; }
+.secundario { background: transparent; color: var(--dorado); border-color: var(--dorado); }
+.secundario:hover { color: var(--fondo); background: var(--dorado); }
+.nota { color: var(--suave); font-size: 0.82rem; line-height: 1.6; margin: 18px 0 0; }
+.titulo-fila { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.titulo-fila h2 { overflow-wrap: anywhere; }
+.cuentas { margin-top: 8px; border-top: 1px solid var(--linea); }
+.cuenta { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 18px 14px; border-bottom: 1px solid var(--linea); color: var(--texto); text-decoration: none; }
+.cuenta:hover { background: var(--panel); }
+.cuenta.activa { background: var(--superficie); outline: 1px solid var(--dorado); outline-offset: -1px; }
+.cuenta strong { font-size: 0.95rem; font-weight: 600; overflow-wrap: anywhere; }
+.cuenta small { margin-top: 4px; }
+.cifra { font-size: 1rem; font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--dorado-claro); }
+.vacio { padding: 40px 0 20px; border-top: 1px solid var(--linea); margin-top: 8px; }
+.vacio h3 { color: var(--dorado-claro); }
+.vacio p { color: var(--suave); font: 1rem/1.7 'Segoe UI', sans-serif; max-width: 55ch; }
+.detalle { margin-top: 36px; }
+.resumen { padding: 18px 0 22px; display: flex; align-items: center; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--linea); flex-wrap: wrap; }
+.resumen .ayuda { margin-bottom: 6px; }
+.saldo { font-size: clamp(1.9rem, 3vw, 2.6rem); margin: 0; color: var(--dorado-claro); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.negativo { color: var(--error); }
+.condiciones { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin: 22px 0 0; }
+dt { color: var(--suave); font-size: 0.82rem; line-height: 1.5; }
+dd { margin: 6px 0 0; font-size: 0.95rem; font-variant-numeric: tabular-nums; }
+.operaciones { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; border-top: 1px solid var(--linea); margin-top: 28px; padding-top: 26px; }
+.operaciones label { margin-top: 16px; }
+.operaciones button { margin-top: 14px; width: 100%; }
+.intereses { margin-top: 28px; padding-top: 26px; border-top: 1px solid var(--linea); }
+.intereses .ayuda { margin-bottom: 12px; }
+.form-fecha { display: flex; gap: 16px; align-items: end; }
+.form-fecha div { flex: 1; }
+.form-fecha label { margin-top: 0; }
+.historial { margin-top: 36px; }
+.tabla-contenedor { overflow-x: auto; scrollbar-color: var(--dorado) var(--superficie); scrollbar-width: thin; }
+table { border-collapse: collapse; width: 100%; font-size: 0.83rem; font-variant-numeric: tabular-nums; }
+th, td { padding: 14px 12px; text-align: left; border-bottom: 1px solid var(--linea); }
+th { color: var(--suave); font-weight: 500; }
+th:nth-child(n+3), td:nth-child(n+3) { text-align: right; white-space: nowrap; }
+td:first-child { white-space: nowrap; }
+.aviso { padding: 16px 20px; border: 1px solid var(--linea); border-radius: 6px; background: var(--panel); margin-bottom: 22px; font-size: 0.95rem; line-height: 1.6; overflow-wrap: anywhere; }
+.aviso.exito { color: var(--exito); }
+.aviso.error { color: var(--error); }
+footer { padding: 24px 32px; border-top: 1px solid var(--linea); text-align: center; color: var(--suave); font-size: 0.82rem; line-height: 1.6; }
+.solo-lectores { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+@media (max-width: 1000px) {
+    .distribucion { grid-template-columns: 280px minmax(0, 1fr); gap: 28px; }
+    .cabecera { padding: 24px; }
+    main { padding: 32px 24px 48px; }
+    .panel { padding: 22px; }
+}
+@media (max-width: 760px) {
+    .distribucion { grid-template-columns: minmax(0, 1fr); }
+    .cabecera { padding: 20px; }
+    main { padding: 30px 20px 40px; }
+    .cabecera > .etiqueta { max-width: 140px; text-align: right; }
+    .crear { max-width: none; }
+    .cuenta { flex-wrap: wrap; gap: 12px; }
+    .form-fecha { flex-direction: column; align-items: stretch; }
+    .form-fecha button { width: 100%; }
+}
+@media (max-width: 420px) {
+    .operaciones, .condiciones { grid-template-columns: minmax(0, 1fr); }
+    .resumen form, .resumen button { width: 100%; }
+}
