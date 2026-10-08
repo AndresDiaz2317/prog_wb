@@ -22,7 +22,9 @@ body{
 
 /* Tarjeta del recibo */
 .recibo{
-    width: 500px;
+    box-sizing: border-box;
+    width: 800px;
+    max-width: 100%;
     background-color: #FBF8F1;
     border: 2px solid #C0392B;
     border-radius: 12px;
@@ -94,4 +96,38 @@ hr{
     transition: transform 1s, background-color 1s;
     background-color: greenyellow;
     transform: scale(1.1)
+}
+
+.tabla-pedido {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+th, td {
+    padding: 12px 8px;
+    text-align: left;
+    border-bottom: 1px solid #d8d0c8;
+}
+
+.recibo p {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 16px;
+    }
+
+    .recibo {
+        padding: 18px;
+    }
 }

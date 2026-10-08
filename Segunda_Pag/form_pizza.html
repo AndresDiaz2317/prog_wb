@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,27 +11,36 @@
   <h1 class = "titulos">Pedido pizza</h1>
   
   <div class = "form-div">
-    <form id = "form-pedido" action = "recibo.html" method = "GET">
+    <form id = "form-pedido" action = "recibo.php" method = "POST">
 
       <div class = "campo-nom">
-          <span>Ingrese su nombre</span>
-          <input type = "text" name ="usuario" id = "nombre" placeholder="ingrese su usario" required>
+          <label for="nombre">Ingrese su nombre</label>
+          <input type = "text" name ="usuario" id = "nombre" placeholder="Ingrese su nombre" required>
       </div>
 
       <div class = "campo-dir">
-        <span>Ingrese su direccion: </span>
+        <label for="direccion">Ingrese su dirección:</label>
         <input type = "text" name = "direccion" id = "direccion" placeholder="ingrese su direccion" required>
       </div>
 
       <div class = "campo-tel">
-        <span>Ingrese su numero de telefono:</span>
-        <input type = "number" name = "telefono" id = "telefono" placeholder="Ingrese su numero de telefono">
+        <label for="telefono">Ingrese su número de teléfono:</label>
+        <input type = "tel" name = "telefono" id = "telefono" placeholder="Ingrese su número de teléfono" required>
+      </div>
+
+      <div class="campo-email">
+        <label for="email">Ingrese su correo electrónico:</label>
+        <input type="email" name="email" id="email" placeholder="nombre@ejemplo.com" required>
       </div>
 
       <div class = "campo-pizza">
         <span>Seleccione el tipo de pizza que desea pedir</span>
 
         <img src = "pizza.png.png" alt = "pizza" class = "img-pizza">
+
+        <p class="precios">Precios de ejemplo para cualquier sabor: porción $6.000;
+          pequeña $18.000; mediana $28.000; grande $38.000; extra grande $48.000.
+          Valores en pesos colombianos, antes del IVA del 19 % usado en este ejercicio.</p>
 
         <div>
           <!-- Opción Napolitana -->
@@ -41,7 +50,7 @@
               <span>Napolitana</span>
             </label>
 
-            <select name="tamano-pizza-nap" id="tamano-nap" class="select-tamano">
+            <select name="tamano-pizza-nap" id="tamano-nap" class="select-tamano" aria-label="Tamaño de la pizza napolitana">
               <option value="" disabled selected>Tamaño</option>
               <option value="porcion">Porción</option>
               <option value="pequena">Pequeña (30 cm)</option>
@@ -50,7 +59,7 @@
               <option value="extra-grande">Extra Grande (46 cm)</option>
             </select>
 
-            <input type="number" name="cantidad-pizza-nap" id="cant-nap" min="1" placeholder="Cant." class="input-cant">
+            <input type="number" name="cantidad-pizza-nap" id="cant-nap" min="1" max="100" step="1" placeholder="Cant." class="input-cant" aria-label="Cantidad de pizzas napolitanas">
           </div>
           
           <!-- Opción Jamón y Queso -->
@@ -60,7 +69,7 @@
               <span>Jamón y queso</span>
             </label>
 
-            <select name="tamano-pizza-jq" id="tamano-jq" class="select-tamano">
+            <select name="tamano-pizza-jq" id="tamano-jq" class="select-tamano" aria-label="Tamaño de la pizza de jamón y queso">
               <option value="" disabled selected>Tamaño</option>
               <option value="porcion">Porción</option>
               <option value="pequena">Pequeña (30 cm)</option>
@@ -69,7 +78,7 @@
               <option value="extra-grande">Extra Grande (46 cm)</option>
             </select>
 
-            <input type="number" name="cantidad-pizza-jq" id="cant-jq" min="1" placeholder="Cant." class="input-cant">
+            <input type="number" name="cantidad-pizza-jq" id="cant-jq" min="1" max="100" step="1" placeholder="Cant." class="input-cant" aria-label="Cantidad de pizzas de jamón y queso">
           </div>
           
           <!-- Opción Muzzarela -->
@@ -79,7 +88,7 @@
               <span>Muzzarela</span>
             </label>
 
-            <select name="tamano-pizza-muz" id="tamano-muz" class="select-tamano">
+            <select name="tamano-pizza-muz" id="tamano-muz" class="select-tamano" aria-label="Tamaño de la pizza muzzarela">
               <option value="" disabled selected>Tamaño</option>
               <option value="porcion">Porción</option>
               <option value="pequena">Pequeña (30 cm)</option>
@@ -88,7 +97,7 @@
               <option value="extra-grande">Extra Grande (46 cm)</option>
             </select>
 
-            <input type="number" name="cantidad-pizza-muz" id="cant-muz" min="1" placeholder="Cant." class="input-cant">
+            <input type="number" name="cantidad-pizza-muz" id="cant-muz" min="1" max="100" step="1" placeholder="Cant." class="input-cant" aria-label="Cantidad de pizzas de muzzarela">
           </div>
         </div>
 
@@ -97,7 +106,7 @@
 
 
         <div class = "botones">
-          <a href = "recibo.html"></a><input type ="submit" name = "enviar" value = "Pedido">
+          <input type ="submit" name = "enviar" value = "Confirmar">
           <input type = "reset" name = "cancelar" value = "Cancelar pedido">
         </div>
 

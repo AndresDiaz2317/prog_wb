@@ -46,6 +46,7 @@ form {
 .campo-nom,
 .campo-dir,
 .campo-tel,
+.campo-email,
 .campo-pedido {
   display: flex;
   flex-direction: column;
@@ -54,9 +55,10 @@ form {
 
 
 /* Textos que describen los campos */
-.campo-nom > span,
-.campo-dir > span,
-.campo-tel > span,
+.campo-nom > label,
+.campo-dir > label,
+.campo-tel > label,
+.campo-email > label,
 .campo-pizza > span {
   font-weight: bold;
   text-align: left;
@@ -66,7 +68,8 @@ form {
 /* Inputs generales */
 .campo-nom input,
 .campo-dir input,
-.campo-tel input {
+.campo-tel input,
+.campo-email input {
   padding: 10px;
 
   border: 1px solid #b9b1aa;
@@ -82,6 +85,7 @@ form {
 .campo-nom input:focus,
 .campo-dir input:focus,
 .campo-tel input:focus,
+.campo-email input:focus,
 textarea:focus {
   outline: none;
   border: 2px solid #2E7D32;
@@ -297,5 +301,41 @@ textarea {
   border-radius: 5px;
   text-align: center;
   font-size: 13px;
+}
+
+.precios {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.select-tamano:disabled,
+.input-cant:disabled {
+  background-color: #f3eee6;
+  cursor: default;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 16px;
+  }
+
+  .form-div {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 18px;
+  }
+
+  .opcion-pizza {
+    flex-wrap: wrap;
+  }
+
+  .opcion-pizza label {
+    flex-basis: 100%;
+  }
+
+  .botones {
+    flex-wrap: wrap;
+  }
 }
 
