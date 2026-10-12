@@ -47,6 +47,7 @@ form {
 .campo-dir,
 .campo-tel,
 .campo-email,
+.campo-cupon,
 .campo-pedido {
   display: flex;
   flex-direction: column;
@@ -59,6 +60,7 @@ form {
 .campo-dir > label,
 .campo-tel > label,
 .campo-email > label,
+.campo-cupon > label,
 .campo-pizza > span {
   font-weight: bold;
   text-align: left;
@@ -69,7 +71,8 @@ form {
 .campo-nom input,
 .campo-dir input,
 .campo-tel input,
-.campo-email input {
+.campo-email input,
+.campo-cupon input {
   padding: 10px;
 
   border: 1px solid #b9b1aa;
@@ -86,6 +89,7 @@ form {
 .campo-dir input:focus,
 .campo-tel input:focus,
 .campo-email input:focus,
+.campo-cupon input:focus,
 textarea:focus {
   outline: none;
   border: 2px solid #2E7D32;

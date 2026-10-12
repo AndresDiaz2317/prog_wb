@@ -9,6 +9,7 @@ abstract class Cuenta implements OperacionesCuenta
     protected string $nombreCliente;
     protected float $saldo;
     protected array $movimientos = [];
+    protected float $metaAhorro = 0;
 
     // Límite técnico de esta demostración, para trabajar con dos decimales.
     public const MONTO_MAXIMO = 1000000000;
@@ -45,6 +46,30 @@ abstract class Cuenta implements OperacionesCuenta
     public function consultarSaldo(): float
     {
         return $this->saldo;
+    }
+
+    public function establecerMetaAhorro(float $meta): void
+    {
+        // Se guarda un objetivo; no se mueve ni se reserva dinero.
+        $this->metaAhorro = $this->validarMonto($meta);
+    }
+
+    public function getMetaAhorro(): float
+    {
+        return $this->metaAhorro;
+    }
+
+    public function calcularProgresoMeta(): array
+    {
+        if ($this->metaAhorro === 0.0) {
+            return ['porcentaje' => 0.0, 'faltante' => 0.0];
+        }
+        // Un saldo negativo indica deuda: el avance empieza en cero.
+        $saldoPositivo = max(0, $this->saldo);
+        return [
+            'porcentaje' => round(min(100, $saldoPositivo / $this->metaAhorro * 100), 2),
+            'faltante' => round(max(0, $this->metaAhorro - $saldoPositivo), 2),
+        ];
     }
 
     public function getMovimientos(): array

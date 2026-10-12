@@ -91,4 +91,27 @@ comprobar($maximo->getUltimoMesAbonado() === null, 'Abono rechazado no marca el 
 $recuperada = unserialize(serialize($corriente));
 comprobar($recuperada instanceof CuentaCorriente && $recuperada->consultarSaldo() === 48600.0, 'Conserva clase y saldo al guardar en sesión');
 
+// La meta se compara con el saldo; no registra transacciones ni reserva dinero.
+$meta = new CuentaAhorros(5, 'María', 100000, 0);
+comprobar($meta->getMetaAhorro() === 0.0 && $meta->calcularProgresoMeta()['porcentaje'] === 0.0, 'Cuenta anterior o nueva sin meta');
+$meta->establecerMetaAhorro(200000);
+comprobar($meta->calcularProgresoMeta() === ['porcentaje' => 50.0, 'faltante' => 100000.0], 'Meta calcula avance y monto faltante');
+comprobar($meta->consultarSaldo() === 100000.0 && count($meta->getMovimientos()) === 1, 'Guardar meta no modifica saldo ni movimientos');
+$meta->depositar(100000);
+comprobar($meta->calcularProgresoMeta() === ['porcentaje' => 100.0, 'faltante' => 0.0], 'Depósito alcanza la meta');
+$meta->depositar(10000);
+comprobar($meta->calcularProgresoMeta()['porcentaje'] === 100.0, 'Avance no supera el 100 %');
+$meta->retirar(110000);
+comprobar($meta->calcularProgresoMeta()['porcentaje'] === 50.0, 'Retiro actualiza el avance');
+foreach ([0, -1, NAN, INF, 0.001, Cuenta::MONTO_MAXIMO + 1] as $valor) {
+    debeRechazar(function () use ($meta, $valor) { $meta->establecerMetaAhorro($valor); }, 'Rechaza meta inválida');
+}
+comprobar($meta->getMetaAhorro() === 200000.0, 'Meta rechazada conserva el objetivo anterior');
+$conMeta = unserialize(serialize($meta));
+comprobar($conMeta->getMetaAhorro() === 200000.0 && $conMeta->calcularProgresoMeta()['porcentaje'] === 50.0, 'Meta se conserva al guardar la sesión');
+$deuda = new CuentaCorriente(6, 'Pedro', 0);
+$deuda->establecerMetaAhorro(200000);
+$deuda->retirar(10000);
+comprobar($deuda->calcularProgresoMeta() === ['porcentaje' => 0.0, 'faltante' => 200000.0], 'Sobregiro no cuenta como ahorro');
+
 echo PHP_EOL . $pruebas . ' comprobaciones correctas.' . PHP_EOL;

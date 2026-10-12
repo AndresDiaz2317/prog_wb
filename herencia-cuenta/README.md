@@ -90,6 +90,27 @@ intereses, duplicados de mes, comisiones, límite de sobregiro y conservación d
 los objetos al serializarlos para la sesión. Una falla termina con código de
 salida distinto de cero.
 
+## Dos mejoras en PHP
+
+- **Meta de ahorro:** objetivo opcional al abrir una cuenta, editable con
+  “Guardar meta”. La propiedad está en `Cuenta`, por lo que ahorros y corriente
+  la heredan y la conservan en `$_SESSION`. PHP calcula
+  `saldo positivo / meta × 100`, limita el avance entre 0 y 100 % y muestra lo
+  que falta. No reserva dinero ni agrega movimientos. Un saldo negativo cuenta
+  como avance cero. Depósitos, retiros e intereses actualizan el avance porque
+  se calcula nuevamente con el saldo actual.
+- **Extracto CSV:** `extracto.php` recupera únicamente la cuenta de la sesión,
+  envía las cabeceras de descarga y recorre el historial con `foreach`.
+  `fputcsv()` escribe un archivo con número de cuenta, fecha, operación, monto,
+  comisión y saldo final. Usa UTF-8, punto y coma entre columnas y coma decimal
+  para abrirlo en Excel con configuración regional en español. La descarga no
+  modifica los movimientos.
+
+Ejemplo: saldo **$100.000**, meta **$200.000** → **50 %** y faltan **$100.000**.
+En ahorros, deposita **$100.000** → **100 %**, “¡Meta alcanzada!”. Descarga el CSV
+y comprueba apertura y depósito. Las pruebas también comprueban las metas.
+Consulta [la guía para sustentar](../SUSTENTACION_PHP.md).
+
 ## Alcance académico
 
 Los objetos se guardan en `$_SESSION`: se conservan al navegar y recargar,

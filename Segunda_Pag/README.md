@@ -43,3 +43,20 @@ se puede cambiar en `Pedido::IVA`. No se guarda el pedido ni se envían correos.
 
 Ejemplo: 2 napolitanas pequeñas ($36.000) y 1 de jamón y queso mediana
 ($28.000) dan subtotal **$64.000**, IVA **$12.160** y total **$76.160 COP**.
+
+## Dos mejoras en PHP
+
+- **Cupón PIZZA10:** campo opcional. `Pedido::aplicarCupon()` normaliza el código
+  con `trim()` y `strtoupper()`, y un `if` valida que sea correcto. Descuenta el
+  10 % del subtotal; el IVA se calcula después del descuento. Un código inválido
+  impide confirmar el pedido hasta corregirlo. Sin cupón, el total sigue igual.
+- **Preparación estimada:** `contarUnidades()` usa `foreach` para sumar cantidades;
+  `estimarMinutosPreparacion()` calcula 20 minutos para la primera unidad y 5 por
+  cada adicional. Es una regla simulada para clase, incluye porciones y no incluye
+  domicilio; no es un seguimiento ni un temporizador real.
+
+Con el pedido del ejemplo, `PIZZA10` descuenta **$6.400**, deja una base de
+**$57.600**, IVA **$10.944** y total **$68.544**. Las 3 unidades dan **30 minutos**.
+
+Pruebas: `php Segunda_Pag/pruebas.php`. Consulta también
+[la guía para sustentar](../SUSTENTACION_PHP.md).

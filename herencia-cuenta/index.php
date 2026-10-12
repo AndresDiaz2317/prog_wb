@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($accion === 'crear') {
             // Guardamos los campos para recuperarlos si hay un error.
             $_SESSION['formulario'] = array_intersect_key($_POST, array_flip([
-                'numero', 'nombre', 'saldo', 'tipo', 'interes',
+                'numero', 'nombre', 'saldo', 'tipo', 'interes', 'meta',
             ]));
             $numero = leerNumeroCuenta($_POST, 'numero');
             $nombre = leerTexto($_POST, 'nombre');
@@ -85,6 +85,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 throw new InvalidArgumentException('Selecciona ahorros o corriente.');
             }
 
+            $meta = isset($_POST['meta']) ? leerTexto($_POST, 'meta') : '';
+            if ($meta !== '') {
+                $cuenta->establecerMetaAhorro(leerDecimal($_POST, 'meta'));
+            }
             $cuentas[$numero] = $cuenta;
             $seleccion = $numero;
             unset($_SESSION['formulario']);
@@ -106,6 +110,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $mensaje = 'Retiro de ' . dinero($monto) . ' realizado.';
                 }
                 $mensaje .= ' Comisión: ' . dinero($comision) . '. Saldo: ' . dinero($cuenta->consultarSaldo()) . '.';
+            } elseif ($accion === 'meta') {
+                $cuenta->establecerMetaAhorro(leerDecimal($_POST, 'meta'));
+                $mensaje = 'Meta de ahorro guardada: ' . dinero($cuenta->getMetaAhorro()) . '.';
             } elseif ($accion === 'consultar') {
                 $mensaje = 'El saldo de la cuenta ' . $seleccion . ' es ' . dinero($cuenta->consultarSaldo()) . '.';
             } elseif ($accion === 'intereses' && $cuenta instanceof CuentaAhorros) {
@@ -226,6 +233,9 @@ $tipoAnterior = valorAnterior('tipo', 'ahorros');
                         <input id="interes" name="interes" type="number" min="0" max="100" step="0.01" value="<?= valorAnterior('interes', '1') ?>" required aria-describedby="interes-ayuda">
                         <small id="interes-ayuda">Solo para ahorros. Porcentaje elegido para el ejercicio.</small>
                     </div>
+                    <label for="meta-inicial">Meta de ahorro (COP, opcional)</label>
+                    <input id="meta-inicial" name="meta" type="number" min="0.01" max="1000000000" step="0.01" value="<?= valorAnterior('meta') ?>" placeholder="Ej. 200000" aria-describedby="meta-inicial-ayuda">
+                    <small id="meta-inicial-ayuda">Compara el saldo con un objetivo. Puedes cambiarlo después.</small>
                     <button type="submit">Crear cuenta</button>
                 </form>
                 <p class="nota">Las cuentas se guardan en la sesión de este navegador. Usa datos ficticios.</p>
@@ -317,10 +327,36 @@ $tipoAnterior = valorAnterior('tipo', 'ahorros');
                                 </form>
                             </div>
                         <?php endif; ?>
+                        <div class="meta-ahorro">
+                            <h3>Meta de ahorro</h3>
+                            <p class="ayuda" id="meta-ayuda">El avance se calcula con tu saldo actual y se actualiza al depositar o retirar. Es una referencia; no reserva dinero.</p>
+                            <?php if ($cuenta->getMetaAhorro() > 0): ?>
+                                <?php $progreso = $cuenta->calcularProgresoMeta(); ?>
+                                <label for="progreso-meta">Avance: <?= number_format($progreso['porcentaje'], 2, ',', '.') ?> % de <?= dinero($cuenta->getMetaAhorro()) ?></label>
+                                <progress id="progreso-meta" max="100" value="<?= $progreso['porcentaje'] ?>"><?= $progreso['porcentaje'] ?> %</progress>
+                                <p class="ayuda"><?= $progreso['faltante'] > 0 ? 'Faltan ' . dinero($progreso['faltante']) . ' para alcanzar tu meta.' : '¡Meta alcanzada!' ?></p>
+                            <?php else: ?>
+                                <p class="ayuda">Define tu primera meta, por ejemplo para comprar un computador.</p>
+                            <?php endif; ?>
+                            <form class="form-fecha" action="index.php" method="post">
+                                <input type="hidden" name="token" value="<?= escapar($_SESSION['token']) ?>">
+                                <input type="hidden" name="cuenta" value="<?= $cuenta->getNumeroCuenta() ?>">
+                                <input type="hidden" name="accion" value="meta">
+                                <div>
+                                    <label for="meta">Objetivo (COP)</label>
+                                    <input id="meta" name="meta" type="number" min="0.01" max="1000000000" step="0.01" value="<?= $cuenta->getMetaAhorro() > 0 ? $cuenta->getMetaAhorro() : '' ?>" placeholder="Ej. 200000" required aria-describedby="meta-ayuda">
+                                </div>
+                                <button class="secundario" type="submit">Guardar meta</button>
+                            </form>
+                        </div>
                     </section>
 
                     <section class="historial" aria-labelledby="titulo-movimientos">
-                        <h2 id="titulo-movimientos">Movimientos</h2>
+                        <div class="titulo-fila">
+                            <h2 id="titulo-movimientos">Movimientos</h2>
+                            <a class="descargar-extracto" href="extracto.php?cuenta=<?= $cuenta->getNumeroCuenta() ?>">Descargar extracto CSV</a>
+                        </div>
+                        <p class="ayuda">Abre el archivo en Excel para revisar los movimientos de esta cuenta. Valores en COP.</p>
                         <div class="tabla-contenedor" role="region" aria-label="Historial de movimientos, desplázate para ver las columnas" tabindex="0">
                             <table>
                                 <caption class="solo-lectores">Movimientos de la cuenta <?= $cuenta->getNumeroCuenta() ?>. Valores en COP.</caption>

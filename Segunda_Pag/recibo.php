@@ -90,6 +90,16 @@ foreach ($sabores as $codigo => $sabor) {
 if ($seleccionadas === 0) {
     $errores[] = 'Seleccione al menos una pizza.';
 }
+
+// El navegador solo envía el código; PHP decide si aplica y cuánto descuenta.
+try {
+    if (isset($_POST['cupon']) && !is_string($_POST['cupon'])) {
+        throw new InvalidArgumentException('El cupón debe ser un texto.');
+    }
+    $pedido->aplicarCupon(leerCampo('cupon'));
+} catch (InvalidArgumentException $error) {
+    $errores[] = $error->getMessage();
+}
 if ($errores) {
     http_response_code(422);
 }
@@ -150,8 +160,15 @@ if ($errores) {
                 </div>
                 <hr>
                 <p>Subtotal: <?= dinero($pedido->calcularSubtotal()) ?></p>
+                <?php if ($pedido->calcularDescuento() > 0): ?>
+                    <p>Descuento PIZZA10 (10 %): −<?= dinero($pedido->calcularDescuento()) ?></p>
+                    <p>Subtotal con descuento: <?= dinero($pedido->calcularSubtotal() - $pedido->calcularDescuento()) ?></p>
+                <?php endif; ?>
                 <p>IVA (19 %): <?= dinero($pedido->calcularIva()) ?></p>
                 <p class="total">Total a pagar: <?= dinero($pedido->calcularTotal()) ?></p>
+                <h2>Preparación estimada</h2>
+                <p><?= $pedido->contarUnidades() ?> unidades · Aproximadamente <?= $pedido->estimarMinutosPreparacion() ?> minutos.<br>
+                    Estimación simulada: 20 minutos por la primera unidad y 5 por cada adicional. No incluye domicilio.</p>
             <?php endif; ?>
         </main>
     </div>

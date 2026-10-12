@@ -1,0 +1,744 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="29.0.0" agent="Codex">
+  <diagram id="01" name="01 · Apertura de cuenta">
+    <mxGraphModel grid="0" guides="1" page="1" pageScale="1" pageWidth="1280" pageHeight="1100" background="#ffffff" shadow="0" dx="1280" dy="1100">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" value="" style="rounded=0;fillColor=#ffffff;strokeColor=none;strokeWidth=1;shadow=0;locked=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1280" height="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="24" y="24" width="1232" height="1052" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" value="" style="rounded=0;fillColor=#f3f3f3;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="24" y="24" width="1232" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" value="" style="rounded=0;fillColor=#cccccc;strokeColor=#999999;strokeWidth=1;shadow=0;ellipse;" vertex="1" parent="1">
+          <mxGeometry x="42" y="40" width="8" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" value="" style="rounded=0;fillColor=#cccccc;strokeColor=#999999;strokeWidth=1;shadow=0;ellipse;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="8" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" value="" style="rounded=0;fillColor=#cccccc;strokeColor=#999999;strokeWidth=1;shadow=0;ellipse;" vertex="1" parent="1">
+          <mxGeometry x="78" y="40" width="8" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" value="Vista de escritorio · Mockup" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="112" y="33" width="1100" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" value="Banco HBC" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontStyle=1;fontColor=#222222;" vertex="1" parent="1">
+          <mxGeometry x="60" y="88" width="560" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" value="Gestión de cuentas" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="880" y="94" width="340" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" value="" style="rounded=0;fillColor=#cccccc;strokeColor=none;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="136" width="1160" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" value="Administración de cuentas" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontStyle=1;fontColor=#222222;" vertex="1" parent="1">
+          <mxGeometry x="60" y="156" width="1160" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" value="Crea cuentas de clientes y realiza operaciones. Valores en COP." style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="60" y="198" width="1160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" value="" style="group;connectable=0;" vertex="1" parent="1" tooltip="Formulario de apertura">
+          <mxGeometry x="60" y="252" width="304" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c14">
+          <mxGeometry x="0" y="0" width="304" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" value="Abrir una cuenta" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontStyle=1;fontColor=#222222;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="20" width="264" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" value="Número de cuenta" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="76" width="264" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="104" width="264" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" value="Ej. 1001" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="c14">
+          <mxGeometry x="32" y="111" width="240" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" value="Nombre del cliente" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="162" width="264" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="190" width="264" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" value="Nombre y apellido" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="c14">
+          <mxGeometry x="32" y="197" width="240" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" value="Tipo de cuenta" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="248" width="264" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="276" width="264" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c25" value="Ahorros" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="c14">
+          <mxGeometry x="32" y="283" width="224" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" value="" style="shape=triangle;direction=south;fillColor=#777777;strokeColor=none;" vertex="1" parent="c14">
+          <mxGeometry x="260" y="292" width="10" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="c27" value="Saldo inicial (COP)" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="334" width="264" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="362" width="264" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c29" value="0,00" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="c14">
+          <mxGeometry x="32" y="369" width="240" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" value="Interés mensual (%)" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="420" width="264" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c31" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="448" width="264" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" value="1" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="c14">
+          <mxGeometry x="32" y="455" width="240" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c33" value="Interés solo para cuentas de ahorros." style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#666666;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="496" width="264" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c34" value="" style="rounded=0;fillColor=#e8e8e8;strokeColor=#777777;strokeWidth=1;shadow=0;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="562" width="264" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c35" value="Crear cuenta" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#222222;" vertex="1" parent="c14">
+          <mxGeometry x="28" y="569" width="248" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c36" value="Datos ficticios para el ejercicio.&#10;Cuentas guardadas en la sesión." style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#666666;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="638" width="264" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="c37" value="" style="group;connectable=0;" vertex="1" parent="1" tooltip="Lista de cuentas">
+          <mxGeometry x="396" y="252" width="824" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="c38" value="Cuentas de clientes" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontStyle=1;fontColor=#222222;" vertex="1" parent="c37">
+          <mxGeometry x="0" y="0" width="590" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="c39" value="0 registradas" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#666666;" vertex="1" parent="c37">
+          <mxGeometry x="640" y="2" width="184" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c40" value="" style="rounded=0;fillColor=#fafafa;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;dashed=1;" vertex="1" parent="c37">
+          <mxGeometry x="0" y="54" width="824" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c41" value="Sin cuentas registradas" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=17;fontStyle=1;fontColor=#222222;" vertex="1" parent="c37">
+          <mxGeometry x="32" y="110" width="760" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" value="Completa el formulario para abrir la primera cuenta." style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="c37">
+          <mxGeometry x="32" y="154" width="760" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c43" value="" style="rounded=0;fillColor=#cccccc;strokeColor=none;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1030" width="1160" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c44" value="Ejercicio académico · Operaciones simuladas · Datos de ejemplo" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1044" width="1160" height="24" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="02" name="02 · Cuenta de ahorros">
+    <mxGraphModel grid="0" guides="1" page="1" pageScale="1" pageWidth="1280" pageHeight="1370" background="#ffffff" shadow="0" dx="1280" dy="1370">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" value="" style="rounded=0;fillColor=#ffffff;strokeColor=none;strokeWidth=1;shadow=0;locked=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1280" height="1370" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="24" y="24" width="1232" height="1322" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" value="" style="rounded=0;fillColor=#f3f3f3;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="24" y="24" width="1232" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" value="" style="rounded=0;fillColor=#cccccc;strokeColor=#999999;strokeWidth=1;shadow=0;ellipse;" vertex="1" parent="1">
+          <mxGeometry x="42" y="40" width="8" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" value="" style="rounded=0;fillColor=#cccccc;strokeColor=#999999;strokeWidth=1;shadow=0;ellipse;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="8" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" value="" style="rounded=0;fillColor=#cccccc;strokeColor=#999999;strokeWidth=1;shadow=0;ellipse;" vertex="1" parent="1">
+          <mxGeometry x="78" y="40" width="8" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" value="Vista de escritorio · Mockup" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="112" y="33" width="1100" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" value="Banco HBC" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontStyle=1;fontColor=#222222;" vertex="1" parent="1">
+          <mxGeometry x="60" y="88" width="560" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" value="Gestión de cuentas" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="880" y="94" width="340" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" value="" style="rounded=0;fillColor=#cccccc;strokeColor=none;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="136" width="1160" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" value="Administración de cuentas" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontStyle=1;fontColor=#222222;" vertex="1" parent="1">
+          <mxGeometry x="60" y="156" width="1160" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" value="Crea cuentas de clientes y realiza operaciones. Valores en COP." style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="60" y="198" width="1160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" value="" style="group;connectable=0;" vertex="1" parent="1" tooltip="Formulario de apertura">
+          <mxGeometry x="60" y="252" width="304" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c14">
+          <mxGeometry x="0" y="0" width="304" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" value="Abrir una cuenta" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontStyle=1;fontColor=#222222;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="20" width="264" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" value="Número de cuenta" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="76" width="264" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="104" width="264" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" value="Ej. 1001" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="c14">
+          <mxGeometry x="32" y="111" width="240" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" value="Nombre del cliente" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="162" width="264" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="190" width="264" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" value="Nombre y apellido" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="c14">
+          <mxGeometry x="32" y="197" width="240" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" value="Tipo de cuenta" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="248" width="264" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="276" width="264" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c25" value="Ahorros" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="c14">
+          <mxGeometry x="32" y="283" width="224" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" value="" style="shape=triangle;direction=south;fillColor=#777777;strokeColor=none;" vertex="1" parent="c14">
+          <mxGeometry x="260" y="292" width="10" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="c27" value="Saldo inicial (COP)" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="334" width="264" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="362" width="264" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c29" value="0,00" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="c14">
+          <mxGeometry x="32" y="369" width="240" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" value="Interés mensual (%)" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="420" width="264" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c31" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="448" width="264" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" value="1" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="c14">
+          <mxGeometry x="32" y="455" width="240" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c33" value="Interés solo para cuentas de ahorros." style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#666666;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="496" width="264" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c34" value="" style="rounded=0;fillColor=#e8e8e8;strokeColor=#777777;strokeWidth=1;shadow=0;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="562" width="264" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c35" value="Crear cuenta" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#222222;" vertex="1" parent="c14">
+          <mxGeometry x="28" y="569" width="248" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c36" value="Datos ficticios para el ejercicio.&#10;Cuentas guardadas en la sesión." style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#666666;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="638" width="264" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="c37" value="" style="group;connectable=0;" vertex="1" parent="1" tooltip="Lista de cuentas">
+          <mxGeometry x="396" y="252" width="824" height="138" as="geometry" />
+        </mxCell>
+        <mxCell id="c38" value="Cuentas de clientes" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontStyle=1;fontColor=#222222;" vertex="1" parent="c37">
+          <mxGeometry x="0" y="0" width="590" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="c39" value="1 registradas" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#666666;" vertex="1" parent="c37">
+          <mxGeometry x="640" y="2" width="184" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c40" value="" style="rounded=0;fillColor=#eeeeee;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c37">
+          <mxGeometry x="0" y="46" width="824" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c41" value="Ana Gómez" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=1;fontColor=#222222;" vertex="1" parent="c37">
+          <mxGeometry x="16" y="52" width="550" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" value="Ahorros · N.º 1001" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#666666;" vertex="1" parent="c37">
+          <mxGeometry x="16" y="76" width="550" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c43" value="$100.000,00" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#222222;" vertex="1" parent="c37">
+          <mxGeometry x="604" y="62" width="204" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c44" value="" style="group;connectable=0;" vertex="1" parent="1" tooltip="Detalle y operaciones">
+          <mxGeometry x="396" y="416" width="824" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="c45" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c44">
+          <mxGeometry x="0" y="0" width="824" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="c46" value="Detalle de la cuenta" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontStyle=1;fontColor=#222222;" vertex="1" parent="c44">
+          <mxGeometry x="24" y="20" width="776" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c47" value="Ana Gómez · Ahorros · 1001" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#222222;" vertex="1" parent="c44">
+          <mxGeometry x="24" y="58" width="776" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c48" value="Saldo actual" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#666666;" vertex="1" parent="c44">
+          <mxGeometry x="24" y="108" width="430" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c49" value="$100.000,00" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=22;fontStyle=1;fontColor=#222222;" vertex="1" parent="c44">
+          <mxGeometry x="24" y="134" width="430" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="c50" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#777777;strokeWidth=1;shadow=0;" vertex="1" parent="c44">
+          <mxGeometry x="604" y="122" width="196" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c51" value="Consultar saldo" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c44">
+          <mxGeometry x="612" y="129" width="180" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c52" value="" style="rounded=0;fillColor=#cccccc;strokeColor=none;strokeWidth=1;shadow=0;" vertex="1" parent="c44">
+          <mxGeometry x="24" y="188" width="776" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c53" value="Interés mensual: 1,00 %" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c44">
+          <mxGeometry x="24" y="210" width="370" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c54" value="Último abono: sin abonos" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c44">
+          <mxGeometry x="420" y="210" width="380" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c55" value="Los intereses se abonan el día 1. Los retiros no superan el saldo." style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#666666;" vertex="1" parent="c44">
+          <mxGeometry x="24" y="250" width="776" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="c56" value="" style="rounded=0;fillColor=#cccccc;strokeColor=none;strokeWidth=1;shadow=0;" vertex="1" parent="c44">
+          <mxGeometry x="24" y="298" width="776" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c57" value="Depositar" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontStyle=1;fontColor=#222222;" vertex="1" parent="c44">
+          <mxGeometry x="24" y="316" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c58" value="Monto (COP)" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c44">
+          <mxGeometry x="24" y="356" width="380" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c59" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c44">
+          <mxGeometry x="24" y="384" width="380" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c60" value="0,00" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="c44">
+          <mxGeometry x="36" y="391" width="356" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c61" value="" style="rounded=0;fillColor=#e8e8e8;strokeColor=#777777;strokeWidth=1;shadow=0;" vertex="1" parent="c44">
+          <mxGeometry x="24" y="442" width="380" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c62" value="Depositar dinero" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#222222;" vertex="1" parent="c44">
+          <mxGeometry x="32" y="449" width="364" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c63" value="Retirar" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontStyle=1;fontColor=#222222;" vertex="1" parent="c44">
+          <mxGeometry x="420" y="316" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c64" value="Monto (COP)" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c44">
+          <mxGeometry x="420" y="356" width="380" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c65" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c44">
+          <mxGeometry x="420" y="384" width="380" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c66" value="0,00" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="c44">
+          <mxGeometry x="432" y="391" width="356" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c67" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#777777;strokeWidth=1;shadow=0;" vertex="1" parent="c44">
+          <mxGeometry x="420" y="442" width="380" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c68" value="Retirar dinero" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c44">
+          <mxGeometry x="428" y="449" width="364" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c69" value="" style="rounded=0;fillColor=#cccccc;strokeColor=none;strokeWidth=1;shadow=0;" vertex="1" parent="c44">
+          <mxGeometry x="24" y="528" width="776" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c70" value="Abonar intereses" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontStyle=1;fontColor=#222222;" vertex="1" parent="c44">
+          <mxGeometry x="24" y="548" width="776" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c71" value="Selecciona el día 1 de un mes posterior al último abonado." style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#666666;" vertex="1" parent="c44">
+          <mxGeometry x="24" y="584" width="776" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c72" value="Fecha del abono" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c44">
+          <mxGeometry x="24" y="630" width="528" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c73" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c44">
+          <mxGeometry x="24" y="658" width="528" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c74" value="dd/mm/aaaa" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="c44">
+          <mxGeometry x="36" y="665" width="504" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c75" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#777777;strokeWidth=1;shadow=0;" vertex="1" parent="c44">
+          <mxGeometry x="576" y="658" width="224" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c76" value="Abonar intereses" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c44">
+          <mxGeometry x="584" y="665" width="208" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c77" value="" style="group;connectable=0;" vertex="1" parent="1" tooltip="Historial de movimientos">
+          <mxGeometry x="396" y="1186" width="824" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="c78" value="Movimientos" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontStyle=1;fontColor=#222222;" vertex="1" parent="c77">
+          <mxGeometry x="0" y="0" width="824" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c79" value="" style="rounded=0;fillColor=#eeeeee;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c77">
+          <mxGeometry x="0" y="40" width="194" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="c80" value="Fecha" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#222222;" vertex="1" parent="c77">
+          <mxGeometry x="8" y="44" width="178" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c81" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c77">
+          <mxGeometry x="0" y="72" width="194" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="c82" value="" style="rounded=0;fillColor=#eeeeee;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c77">
+          <mxGeometry x="194" y="40" width="190" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="c83" value="Operación" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#222222;" vertex="1" parent="c77">
+          <mxGeometry x="202" y="44" width="174" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c84" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c77">
+          <mxGeometry x="194" y="72" width="190" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="c85" value="" style="rounded=0;fillColor=#eeeeee;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c77">
+          <mxGeometry x="384" y="40" width="148" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="c86" value="Monto" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#222222;" vertex="1" parent="c77">
+          <mxGeometry x="392" y="44" width="132" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c87" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c77">
+          <mxGeometry x="384" y="72" width="148" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="c88" value="" style="rounded=0;fillColor=#eeeeee;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c77">
+          <mxGeometry x="532" y="40" width="128" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="c89" value="Comisión" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#222222;" vertex="1" parent="c77">
+          <mxGeometry x="540" y="44" width="112" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c90" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c77">
+          <mxGeometry x="532" y="72" width="128" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="c91" value="" style="rounded=0;fillColor=#eeeeee;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c77">
+          <mxGeometry x="660" y="40" width="164" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="c92" value="Saldo final" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#222222;" vertex="1" parent="c77">
+          <mxGeometry x="668" y="44" width="148" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c93" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c77">
+          <mxGeometry x="660" y="72" width="164" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="c94" value="12/10/2026" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#222222;" vertex="1" parent="c77">
+          <mxGeometry x="8" y="77" width="178" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c95" value="Apertura" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#222222;" vertex="1" parent="c77">
+          <mxGeometry x="202" y="77" width="174" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c96" value="$100.000,00" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#222222;" vertex="1" parent="c77">
+          <mxGeometry x="392" y="77" width="132" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c97" value="$0,00" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#222222;" vertex="1" parent="c77">
+          <mxGeometry x="540" y="77" width="112" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c98" value="$100.000,00" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#222222;" vertex="1" parent="c77">
+          <mxGeometry x="668" y="77" width="148" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c99" value="" style="rounded=0;fillColor=#cccccc;strokeColor=none;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1300" width="1160" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c100" value="Ejercicio académico · Operaciones simuladas · Datos de ejemplo" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1314" width="1160" height="24" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="03" name="03 · Cuenta corriente">
+    <mxGraphModel grid="0" guides="1" page="1" pageScale="1" pageWidth="1280" pageHeight="1370" background="#ffffff" shadow="0" dx="1280" dy="1370">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" value="" style="rounded=0;fillColor=#ffffff;strokeColor=none;strokeWidth=1;shadow=0;locked=1;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1280" height="1370" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="24" y="24" width="1232" height="1322" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" value="" style="rounded=0;fillColor=#f3f3f3;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="24" y="24" width="1232" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" value="" style="rounded=0;fillColor=#cccccc;strokeColor=#999999;strokeWidth=1;shadow=0;ellipse;" vertex="1" parent="1">
+          <mxGeometry x="42" y="40" width="8" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" value="" style="rounded=0;fillColor=#cccccc;strokeColor=#999999;strokeWidth=1;shadow=0;ellipse;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="8" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" value="" style="rounded=0;fillColor=#cccccc;strokeColor=#999999;strokeWidth=1;shadow=0;ellipse;" vertex="1" parent="1">
+          <mxGeometry x="78" y="40" width="8" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" value="Vista de escritorio · Mockup" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="112" y="33" width="1100" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" value="Banco HBC" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontStyle=1;fontColor=#222222;" vertex="1" parent="1">
+          <mxGeometry x="60" y="88" width="560" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" value="Gestión de cuentas" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="880" y="94" width="340" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" value="" style="rounded=0;fillColor=#cccccc;strokeColor=none;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="136" width="1160" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" value="Administración de cuentas" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=23;fontStyle=1;fontColor=#222222;" vertex="1" parent="1">
+          <mxGeometry x="60" y="156" width="1160" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" value="Crea cuentas de clientes y realiza operaciones. Valores en COP." style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="60" y="198" width="1160" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" value="" style="group;connectable=0;" vertex="1" parent="1" tooltip="Formulario de apertura">
+          <mxGeometry x="60" y="252" width="304" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c14">
+          <mxGeometry x="0" y="0" width="304" height="740" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" value="Abrir una cuenta" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontStyle=1;fontColor=#222222;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="20" width="264" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" value="Número de cuenta" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="76" width="264" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="104" width="264" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" value="Ej. 1001" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="c14">
+          <mxGeometry x="32" y="111" width="240" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" value="Nombre del cliente" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="162" width="264" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="190" width="264" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" value="Nombre y apellido" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="c14">
+          <mxGeometry x="32" y="197" width="240" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" value="Tipo de cuenta" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="248" width="264" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="276" width="264" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c25" value="Ahorros" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="c14">
+          <mxGeometry x="32" y="283" width="224" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" value="" style="shape=triangle;direction=south;fillColor=#777777;strokeColor=none;" vertex="1" parent="c14">
+          <mxGeometry x="260" y="292" width="10" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="c27" value="Saldo inicial (COP)" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="334" width="264" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="362" width="264" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c29" value="0,00" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="c14">
+          <mxGeometry x="32" y="369" width="240" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" value="Interés mensual (%)" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="420" width="264" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c31" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="448" width="264" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" value="1" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="c14">
+          <mxGeometry x="32" y="455" width="240" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c33" value="Interés solo para cuentas de ahorros." style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#666666;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="496" width="264" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c34" value="" style="rounded=0;fillColor=#e8e8e8;strokeColor=#777777;strokeWidth=1;shadow=0;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="562" width="264" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c35" value="Crear cuenta" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#222222;" vertex="1" parent="c14">
+          <mxGeometry x="28" y="569" width="248" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c36" value="Datos ficticios para el ejercicio.&#10;Cuentas guardadas en la sesión." style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#666666;" vertex="1" parent="c14">
+          <mxGeometry x="20" y="638" width="264" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="c37" value="" style="group;connectable=0;" vertex="1" parent="1" tooltip="Lista de cuentas">
+          <mxGeometry x="396" y="252" width="824" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="c38" value="Cuentas de clientes" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontStyle=1;fontColor=#222222;" vertex="1" parent="c37">
+          <mxGeometry x="0" y="0" width="590" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="c39" value="2 registradas" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#666666;" vertex="1" parent="c37">
+          <mxGeometry x="640" y="2" width="184" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c40" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c37">
+          <mxGeometry x="0" y="46" width="824" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c41" value="Ana Gómez" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#222222;" vertex="1" parent="c37">
+          <mxGeometry x="16" y="52" width="550" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" value="Ahorros · N.º 1001" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#666666;" vertex="1" parent="c37">
+          <mxGeometry x="16" y="76" width="550" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c43" value="$100.000,00" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#222222;" vertex="1" parent="c37">
+          <mxGeometry x="604" y="62" width="204" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c44" value="" style="rounded=0;fillColor=#eeeeee;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c37">
+          <mxGeometry x="0" y="114" width="824" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c45" value="Carlos Ruiz" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=1;fontColor=#222222;" vertex="1" parent="c37">
+          <mxGeometry x="16" y="120" width="550" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c46" value="Corriente · N.º 2001" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#666666;" vertex="1" parent="c37">
+          <mxGeometry x="16" y="144" width="550" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c47" value="$100.000,00" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=right;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#222222;" vertex="1" parent="c37">
+          <mxGeometry x="604" y="130" width="204" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c48" value="" style="group;connectable=0;" vertex="1" parent="1" tooltip="Detalle y operaciones">
+          <mxGeometry x="396" y="484" width="824" height="616" as="geometry" />
+        </mxCell>
+        <mxCell id="c49" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c48">
+          <mxGeometry x="0" y="0" width="824" height="616" as="geometry" />
+        </mxCell>
+        <mxCell id="c50" value="Detalle de la cuenta" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontStyle=1;fontColor=#222222;" vertex="1" parent="c48">
+          <mxGeometry x="24" y="20" width="776" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c51" value="Carlos Ruiz · Corriente · 2001" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#222222;" vertex="1" parent="c48">
+          <mxGeometry x="24" y="58" width="776" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c52" value="Saldo actual" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#666666;" vertex="1" parent="c48">
+          <mxGeometry x="24" y="108" width="430" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c53" value="$100.000,00" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=22;fontStyle=1;fontColor=#222222;" vertex="1" parent="c48">
+          <mxGeometry x="24" y="134" width="430" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="c54" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#777777;strokeWidth=1;shadow=0;" vertex="1" parent="c48">
+          <mxGeometry x="604" y="122" width="196" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c55" value="Consultar saldo" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c48">
+          <mxGeometry x="612" y="129" width="180" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c56" value="" style="rounded=0;fillColor=#cccccc;strokeColor=none;strokeWidth=1;shadow=0;" vertex="1" parent="c48">
+          <mxGeometry x="24" y="188" width="776" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c57" value="Comisión: 4 × 1000 (0,4 %)" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c48">
+          <mxGeometry x="24" y="210" width="370" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c58" value="Límite de sobregiro: $300.000,00" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c48">
+          <mxGeometry x="420" y="210" width="380" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c59" value="Sobregiro utilizado: $0,00" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c48">
+          <mxGeometry x="24" y="248" width="370" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c60" value="Sobregiro disponible: $300.000,00" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c48">
+          <mxGeometry x="420" y="248" width="380" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c61" value="Los depósitos y retiros incluyen comisión." style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#666666;" vertex="1" parent="c48">
+          <mxGeometry x="24" y="288" width="776" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c62" value="" style="rounded=0;fillColor=#cccccc;strokeColor=none;strokeWidth=1;shadow=0;" vertex="1" parent="c48">
+          <mxGeometry x="24" y="334" width="776" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c63" value="Depositar" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontStyle=1;fontColor=#222222;" vertex="1" parent="c48">
+          <mxGeometry x="24" y="352" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c64" value="Monto (COP)" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c48">
+          <mxGeometry x="24" y="392" width="380" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c65" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c48">
+          <mxGeometry x="24" y="420" width="380" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c66" value="0,00" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="c48">
+          <mxGeometry x="36" y="427" width="356" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c67" value="" style="rounded=0;fillColor=#e8e8e8;strokeColor=#777777;strokeWidth=1;shadow=0;" vertex="1" parent="c48">
+          <mxGeometry x="24" y="478" width="380" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c68" value="Depositar dinero" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=1;fontColor=#222222;" vertex="1" parent="c48">
+          <mxGeometry x="32" y="485" width="364" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c69" value="Retirar" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=16;fontStyle=1;fontColor=#222222;" vertex="1" parent="c48">
+          <mxGeometry x="420" y="352" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c70" value="Monto (COP)" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c48">
+          <mxGeometry x="420" y="392" width="380" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="c71" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;shadow=0;" vertex="1" parent="c48">
+          <mxGeometry x="420" y="420" width="380" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c72" value="0,00" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=14;fontStyle=0;fontColor=#666666;" vertex="1" parent="c48">
+          <mxGeometry x="432" y="427" width="356" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c73" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#777777;strokeWidth=1;shadow=0;" vertex="1" parent="c48">
+          <mxGeometry x="420" y="478" width="380" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="c74" value="Retirar dinero" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=13;fontStyle=0;fontColor=#222222;" vertex="1" parent="c48">
+          <mxGeometry x="428" y="485" width="364" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c75" value="" style="group;connectable=0;" vertex="1" parent="1" tooltip="Historial de movimientos">
+          <mxGeometry x="396" y="1130" width="824" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="c76" value="Movimientos" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=18;fontStyle=1;fontColor=#222222;" vertex="1" parent="c75">
+          <mxGeometry x="0" y="0" width="824" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="c77" value="" style="rounded=0;fillColor=#eeeeee;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c75">
+          <mxGeometry x="0" y="40" width="194" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="c78" value="Fecha" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#222222;" vertex="1" parent="c75">
+          <mxGeometry x="8" y="44" width="178" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c79" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c75">
+          <mxGeometry x="0" y="72" width="194" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="c80" value="" style="rounded=0;fillColor=#eeeeee;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c75">
+          <mxGeometry x="194" y="40" width="190" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="c81" value="Operación" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#222222;" vertex="1" parent="c75">
+          <mxGeometry x="202" y="44" width="174" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c82" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c75">
+          <mxGeometry x="194" y="72" width="190" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="c83" value="" style="rounded=0;fillColor=#eeeeee;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c75">
+          <mxGeometry x="384" y="40" width="148" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="c84" value="Monto" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#222222;" vertex="1" parent="c75">
+          <mxGeometry x="392" y="44" width="132" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c85" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c75">
+          <mxGeometry x="384" y="72" width="148" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="c86" value="" style="rounded=0;fillColor=#eeeeee;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c75">
+          <mxGeometry x="532" y="40" width="128" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="c87" value="Comisión" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#222222;" vertex="1" parent="c75">
+          <mxGeometry x="540" y="44" width="112" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c88" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c75">
+          <mxGeometry x="532" y="72" width="128" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="c89" value="" style="rounded=0;fillColor=#eeeeee;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c75">
+          <mxGeometry x="660" y="40" width="164" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="c90" value="Saldo final" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#222222;" vertex="1" parent="c75">
+          <mxGeometry x="668" y="44" width="148" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c91" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#aaaaaa;strokeWidth=1;shadow=0;" vertex="1" parent="c75">
+          <mxGeometry x="660" y="72" width="164" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="c92" value="12/10/2026" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#222222;" vertex="1" parent="c75">
+          <mxGeometry x="8" y="77" width="178" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c93" value="Apertura" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#222222;" vertex="1" parent="c75">
+          <mxGeometry x="202" y="77" width="174" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c94" value="$100.000,00" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#222222;" vertex="1" parent="c75">
+          <mxGeometry x="392" y="77" width="132" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c95" value="$0,00" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#222222;" vertex="1" parent="c75">
+          <mxGeometry x="540" y="77" width="112" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c96" value="$100.000,00" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=left;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#222222;" vertex="1" parent="c75">
+          <mxGeometry x="668" y="77" width="148" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c97" value="" style="rounded=0;fillColor=#cccccc;strokeColor=none;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1300" width="1160" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c98" value="Ejercicio académico · Operaciones simuladas · Datos de ejemplo" style="text;html=0;whiteSpace=wrap;overflow=hidden;fillColor=none;strokeColor=none;spacing=0;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=12;fontStyle=0;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1314" width="1160" height="24" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -76,9 +76,12 @@ class Pizza
 class Pedido implements Calculable
 {
     const IVA = 0.19; // Porcentaje elegido para el ejercicio académico.
+    const CUPON = 'PIZZA10';
+    const DESCUENTO = 0.10;
 
     public $cliente;
     public $pizzas = [];
+    private $cupon = '';
 
     public function __construct(Cliente $cliente)
     {
@@ -101,11 +104,44 @@ class Pedido implements Calculable
 
     public function calcularIva()
     {
-        return round($this->calcularSubtotal() * self::IVA);
+        // El IVA se calcula después de descontar el cupón.
+        return round(($this->calcularSubtotal() - $this->calcularDescuento()) * self::IVA);
     }
 
     public function calcularTotal()
     {
-        return $this->calcularSubtotal() + $this->calcularIva();
+        return $this->calcularSubtotal() - $this->calcularDescuento() + $this->calcularIva();
+    }
+
+    public function aplicarCupon($codigo)
+    {
+        $codigo = strtoupper(trim($codigo));
+        if ($codigo !== '' && $codigo !== self::CUPON) {
+            throw new InvalidArgumentException('Cupón no válido. Use PIZZA10 o deje el campo vacío.');
+        }
+        $this->cupon = $codigo;
+    }
+
+    public function calcularDescuento()
+    {
+        if ($this->cupon === self::CUPON) {
+            return round($this->calcularSubtotal() * self::DESCUENTO);
+        }
+        return 0;
+    }
+
+    public function contarUnidades()
+    {
+        $unidades = 0;
+        foreach ($this->pizzas as $pizza) {
+            $unidades += $pizza->cantidad;
+        }
+        return $unidades;
+    }
+
+    public function estimarMinutosPreparacion()
+    {
+        // Regla simulada: 20 minutos por la primera unidad y 5 por cada adicional.
+        return 20 + 5 * max(0, $this->contarUnidades() - 1);
     }
 }
